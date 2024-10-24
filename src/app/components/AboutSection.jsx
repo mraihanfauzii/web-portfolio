@@ -9,13 +9,11 @@ const TAB_DATA = [
         id: "skills",
         content: (
             <ul className='list-disc pl-2'>
-                <li>Kotlin</li>
-                <li>Flutter</li>
-                <li>React Native</li>
-                <li>Machine Learning</li>
-                <li>Java Script</li>
-                <li>Laravel</li>
-                <li>UI/UX</li>
+                <li>Mobile Application Development (Kotlin, Flutter, React Native) - 2 Years Experience (11 Month Work Experience)</li>
+                <li>Front-End Web Development (HTML, CSS, Javascript, Next JS) - 5 Month Experience</li>
+                <li>Back-End Web Development (Express JS, Nest JS, Laravel) - 4 Month Experience</li>
+                <li>Computer Vision and Machine Learning - 3 Month Experience</li>
+                <li>UI/UX - 5 Month Experience</li>
             </ul>
         )
     },
@@ -24,31 +22,26 @@ const TAB_DATA = [
         id: "experience",
         content: (
             <ul className='list-disc pl-2'>
-                <li>experience 1</li>
-                <li>experience 2</li>
-                <li>experience 3</li>
+                <li>Software Engineering : Implementation and Testing Lecturer Assistant at Telkom University (Oct 2024 - Present)</li>
+                <li>Back-End Mentee of Digistar Class 2024 at Digistar Club by Telkom Indonesia (Aug - Sep 2024)</li>
+                <li>Mobile Engineer Intern at Telkom Indonesia (Apr - Sep 2024)</li>
+                <li>Head of Public Relations (Laboratory Assistant) at Mobile Innovation Laboratory Telkom University (Aug 2023 - Aug 2024)</li>
+                <li>Software Engineering : Implementation and Testing Lecturer Assistant at Telkom University (Oct 2023 - Jan 2024)</li>
+                <li>Mobile Engineer Intern at Telkom Indonesia (Aug - Dec 2023)</li>
+                <li>Mobile Development Learning Path at Bangkit Academy led by Google, Tokopedia, Gojek, & Traveloka (Feb - Jul 2023)</li>
+                <li>Creative Bureau Staff & Secretary at The Informatics Undergraduate Student Association of Telkom University (Apr 2022 - Mar 2023)</li>
             </ul>
         )
     },
     {
-        title: "Certification",
-        id: "certification",
-        content: (
-            <ul className='list-disc pl-2'>
-                <li>certification 1</li>
-                <li>certification 2</li>
-                <li>certification 3</li>
-            </ul>
-        )
-    },
-    {
-        title: "Award",
+        title: "Honors & Awards",
         id: "award",
         content: (
             <ul className='list-disc pl-2'>
-                <li>award 1</li>
-                <li>award 2</li>
-                <li>award 3</li>
+                <li>3rd Place in Hackathon ITFest 2024 by IT Fest Micro IPB</li>
+                <li>Author and Presenter at the 7th International Conference on Data Science and Its Applications (ICoDSA) 2024</li>
+                <li>3rd Place in JBC Business Plan Competition 2022 by Search Telkom University</li>
+                <li>The 5 Best Project Plans Award - Z Future Leader 2021 by CentennialZ</li>
             </ul>
         )
     }
@@ -65,15 +58,15 @@ const AboutSection = () => {
     }
 
     return (
-        <section className='text-white'>
+        <section className='text-white'  id='about'>
             <div className='md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16'>
-                <Image src='/images/programmer.jpg' width={500} height={500}/>
+                <Image src='/images/programmer.jpg' width={700} height={700}/>
                 <div className='mt-4 md:mt-0 text-left flex flex-col h-full'>
                     <h2 className='text-4xl font-bold text-white mb-4'>About Me</h2>
                     <p className='text-base lg:text-lg'>
                     I am a passionate Mobile developer with a strong academic background in computer science. Proficient in Kotlin, React Native, and Flutter, I have experience developing various simple Android apps. 
                     
-                    I am actively seeking a challenging position where I can apply my skills and knowledge to make a positive impact. Highly motivated and results-oriented, I possess a strong work ethic. Additionally, I am a team player and always eager to learn. Thank you for visiting my LinkedIn profile! I look forward to connecting with professionals who share common interests and goals.
+                    I am actively seeking a challenging position where I can apply my skills and knowledge to make a positive impact. Highly motivated and results-oriented, I possess a strong work ethic. Additionally, I am a team player and always eager to learn. Thank you for visiting my portfolio website! 
                     </p>
                     <div className='flex flex-row justify-start mt-8'>
                         <TabButton selectTab={() => handleTabChange('skills')} active={tab === 'skills'}>
@@ -84,13 +77,9 @@ const AboutSection = () => {
                         {' '}
                             Experience{' '}
                         </TabButton>
-                        <TabButton selectTab={() => handleTabChange('certification')} active={tab === 'certification'}>
-                        {' '}
-                            Certification{' '}
-                        </TabButton>
                         <TabButton selectTab={() => handleTabChange('award')} active={tab === 'award'}>
                         {' '}
-                            Award{' '}
+                            Honors & Awards{' '}
                         </TabButton>
                     </div>
                     <div className='mt-8'>{TAB_DATA.find((t) => t.id === tab).content}</div>
