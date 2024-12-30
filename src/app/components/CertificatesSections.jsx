@@ -10,7 +10,7 @@ const projectsData = [
         description: 'April - September 2024 (6 Month)',
         image: '/images/certificates/DDBMagenta.png',
         tag: ['Cert'],
-        previewUrl: 'https://media.licdn.com/dms/document/media/D562DAQHH6wxna8SC_g/profile-treasury-document-pdf-analyzed/0/1728452751196?e=1730937600&v=beta&t=5zo0bqtZ-CHcjk-CKvyFCFRgms0-g2tcpEwO701QWkU'
+        previewUrl: 'https://magentaku.id?nomor_sertifikat=00119%2FMAGENTA%2FFHCI01%2F10%2F24'
     },
     {
         id: 2,
@@ -18,7 +18,7 @@ const projectsData = [
         description: 'August - December 2023 (5 Month)',
         image: '/images/certificates/DDBKampusMerdeka.png',
         tag: ['Cert'],
-        previewUrl: 'https://media.licdn.com/dms/document/media/D562DAQHRw5toBW2vqA/profile-treasury-document-pdf-analyzed/0/1709935468804?e=1730937600&v=beta&t=aJmuDrbAu2eoEriVKE45pTqnW0N-4sFX5x5QHy-g3a8'
+        previewUrl: 'https://drive.google.com/file/d/1_Hlufew8zvIIVYV6eGzxUcGeWKjGqxHU/view?usp=sharing'
     },
     {
         id: 3,
@@ -26,7 +26,7 @@ const projectsData = [
         description: 'Bangkit Academy led by Google, Tokopedia, Gojek, & Traveloka',
         image: '/images/certificates/Bangkit.png',
         tag: ['Cert'],
-        previewUrl: 'https://media.licdn.com/dms/document/media/D562DAQEgMk-8ZQPIWw/profile-treasury-document-pdf-analyzed/0/1709935683131?e=1730937600&v=beta&t=slQWi4UaJGTI6DhVLeKYmlEQoVZ0vsWNvnFvmXPZU7E'
+        previewUrl: 'https://drive.google.com/file/d/1PqTRuBbKaXXUCDp5FeFf5GiqWwFOtq4V/view?usp=sharing'
     },
     {
         id: 4,
@@ -42,7 +42,7 @@ const projectsData = [
         description: 'We developed two mobile applications: one for customers and another for vendors (architects and builders), along with a backend system that we deployed. The platform also featured a machine learning-based recommender system, which was integrated into the backend to match clients with suitable architects based on their project needs.',
         image: '/images/certificates/3rd_Place_in_ITFest_Hackathon.png',
         tag: ['Cert'],
-        previewUrl: 'https://media.licdn.com/dms/document/media/D562DAQFE7szufPuxGg/profile-treasury-document-pdf-analyzed/0/1727925130226?e=1730937600&v=beta&t=vvSjIhVuqUb_F0jH9_ZCAm-tBZoZgP5km7Vy0kbxdZQ'
+        previewUrl: 'https://drive.google.com/file/d/1nre6lPJcGbCOBU8z86MiL92NJ1DPDHxH/view?usp=sharing'
     },
     {
         id: 6,
@@ -94,6 +94,22 @@ const projectsData = [
     },
     {
         id: 12,
+        title: 'Belajar Pengembangan Aplikasi Flutter Intermediate',
+        description: 'Dicoding Indonesia',
+        image: '/images/certificates/flutter_intermediate.png',
+        tag: ['Cert'],
+        previewUrl: 'https://www.dicoding.com/certificates/2VX348MLNZYQ'
+    },
+    {
+        id: 13,
+        title: 'Belajar Fundamental Aplikasi Flutter',
+        description: 'Dicoding Indonesia',
+        image: '/images/certificates/fundamental_flutter.png',
+        tag: ['Cert'],
+        previewUrl: 'https://www.dicoding.com/certificates/07Z643QNWPQR'
+    },
+    {
+        id: 14,
         title: 'Belajar Membuat Aplikasi Android dengan Jetpack Compose',
         description: 'Dicoding Indonesia',
         image: '/images/certificates/jetpack_compose.png',
@@ -101,7 +117,7 @@ const projectsData = [
         previewUrl: 'https://www.dicoding.com/certificates/81P23835YXOY'
     },
     {
-        id: 13,
+        id: 15,
         title: 'Belajar Pengembangan Aplikasi Android Intermediate',
         description: 'Dicoding Indonesia',
         image: '/images/certificates/android_intermediate.png',
@@ -109,7 +125,7 @@ const projectsData = [
         previewUrl: 'https://www.dicoding.com/certificates/QLZ9Q462DZ5D'
     },
     {
-        id: 14,
+        id: 16,
         title: 'Belajar Fundamental Aplikasi Android',
         description: 'Dicoding Indonesia',
         image: '/images/certificates/fundamental_android.png',
@@ -117,15 +133,15 @@ const projectsData = [
         previewUrl: 'https://www.dicoding.com/certificates/0LZ09D690Z65'
     },
     {
-        id: 15,
+        id: 17,
         title: 'Belajar Dasar Pemrograman Web',
         description: 'Dicoding Indonesia',
-        image: '/images/certificates/dasar_pemrograman_Web.png',
+        image: '/images/certificates/dasar_pemrograman_web.png',
         tag: ['Cert'],
         previewUrl: 'https://www.dicoding.com/certificates/N9ZO6E4V0XG5'
     },
     {
-        id: 16,
+        id: 18,
         title: 'Belajar Dasar-Dasar DevOps',
         description: 'Dicoding Indonesia',
         image: '/images/certificates/dasar-dasar_devops.png',
@@ -133,7 +149,7 @@ const projectsData = [
         previewUrl: 'https://www.dicoding.com/certificates/4EXGQONR1ZRL'
     },
     {
-        id: 17,
+        id: 19,
         title: 'Belajar Machine Learning untuk Pemula',
         description: 'Dicoding Indonesia',
         image: '/images/certificates/ml_pemula.png',
@@ -141,7 +157,7 @@ const projectsData = [
         previewUrl: 'https://www.dicoding.com/certificates/MEPJNQQMLX3V'
     },
     {
-        id: 18,
+        id: 20,
         title: 'Belajar Membuat Aplikasi Back-End untuk Pemula',
         description: 'Dicoding Indonesia',
         image: '/images/certificates/be_pemula.png',
@@ -149,7 +165,7 @@ const projectsData = [
         previewUrl: 'https://www.dicoding.com/certificates/JMZV3LN5JPN9'
     },
     {
-        id: 19,
+        id: 21,
         title: 'Belajar Dasar AI',
         description: 'Dicoding Indonesia',
         image: '/images/certificates/dasar_ai.png',
@@ -157,7 +173,7 @@ const projectsData = [
         previewUrl: 'https://www.dicoding.com/certificates/NVP77RO3GPR0'
     },
     {
-        id: 20,
+        id: 22,
         title: 'Belajar Dasar UX Design',
         description: 'Dicoding Indonesia',
         image: '/images/certificates/ux_design.png',
@@ -165,7 +181,7 @@ const projectsData = [
         previewUrl: 'https://www.dicoding.com/certificates/0LZ096RGKZ65'
     },
     {
-        id: 21,
+        id: 23,
         title: 'Belajar Membuat Aplikasi Android untuk Pemula',
         description: 'Dicoding Indonesia',
         image: '/images/certificates/android_pemula.png',
@@ -173,7 +189,7 @@ const projectsData = [
         previewUrl: 'https://www.dicoding.com/certificates/MEPJK1YW6X3V'
     },
     {
-        id: 22,
+        id: 24,
         title: 'Belajar Membuat Aplikasi Flutter untuk Pemula',
         description: 'Dicoding Indonesia',
         image: '/images/certificates/flutter_pemula.png',
@@ -181,7 +197,7 @@ const projectsData = [
         previewUrl: 'https://www.dicoding.com/certificates/0LZ093210Z65'
     },
     {
-        id: 23,
+        id: 25,
         title: 'Belajar Dasar Git dengan GitHub',
         description: 'Dicoding Indonesia',
         image: '/images/certificates/github.png',
@@ -189,7 +205,7 @@ const projectsData = [
         previewUrl: 'https://www.dicoding.com/certificates/0LZ0GNNRQX65'
     },
     {
-        id: 24,
+        id: 26,
         title: 'IT Support Google Specialization',
         description: 'Google',
         image: '/images/certificates/IT_Support_Google-Coursera.jpeg',
@@ -197,7 +213,7 @@ const projectsData = [
         previewUrl: 'https://coursera.org/verify/professional-cert/AB547QLL7XBW'
     },
     {
-        id: 25,
+        id: 27,
         title: 'UI/UX Bootcamp',
         description: 'MySkill',
         image: '/images/certificates/myskill-uiux.png',
@@ -205,7 +221,7 @@ const projectsData = [
         previewUrl: 'https://drive.google.com/file/d/18Ep50MBSB9XtGs-naNH2vLNM0VKrfew-/view?usp=sharing'
     },
     {
-        id: 26,
+        id: 28,
         title: 'Digital Marketing Bootcamp',
         description: 'MySkill',
         image: '/images/certificates/myskill-digmar.png',

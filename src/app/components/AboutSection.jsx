@@ -25,10 +25,20 @@ const TAB_DATA = [
                 <li>Software Engineering : Implementation and Testing Lecturer Assistant at Telkom University (Oct 2024 - Present)</li>
                 <li>Back-End Mentee of Digistar Class 2024 at Digistar Club by Telkom Indonesia (Aug - Sep 2024)</li>
                 <li>Mobile Engineer Intern at Telkom Indonesia (Apr - Sep 2024)</li>
-                <li>Head of Public Relations (Laboratory Assistant) at Mobile Innovation Laboratory Telkom University (Aug 2023 - Aug 2024)</li>
                 <li>Software Engineering : Implementation and Testing Lecturer Assistant at Telkom University (Oct 2023 - Jan 2024)</li>
                 <li>Mobile Engineer Intern at Telkom Indonesia (Aug - Dec 2023)</li>
                 <li>Mobile Development Learning Path at Bangkit Academy led by Google, Tokopedia, Gojek, & Traveloka (Feb - Jul 2023)</li>
+            </ul>
+        )
+    },
+    {
+        title: "Organizations and Committees",
+        id: "organizations",
+        content: (
+            <ul className='list-disc pl-2'>
+                <li>Head of Publication, Decoration, and Documentation of MotionHack 3.0 by Mobile Innovation Laboratory Telkom University (Mar - Apr 2024)</li>
+                <li>Head of Public Relations (Laboratory Assistant) at Mobile Innovation Laboratory Telkom University (Aug 2023 - Aug 2024)</li>
+                <li>Staff of Publication & Creative of Interfest 2022 by The Informatics Undergraduate Student Association of Telkom University (Sep - Dec 2022)</li>
                 <li>Creative Bureau Staff & Secretary at The Informatics Undergraduate Student Association of Telkom University (Apr 2022 - Mar 2023)</li>
             </ul>
         )
@@ -38,6 +48,7 @@ const TAB_DATA = [
         id: "award",
         content: (
             <ul className='list-disc pl-2'>
+                <li>Graduated with honors (Cum Laude) from the Bachelor of Informatics program at Telkom University with a GPA of 3.73/4.00.</li>
                 <li>3rd Place in Hackathon ITFest 2024 by IT Fest Micro IPB</li>
                 <li>Author and Presenter at the 7th International Conference on Data Science and Its Applications (ICoDSA) 2024</li>
                 <li>3rd Place in JBC Business Plan Competition 2022 by Search Telkom University</li>
@@ -76,6 +87,10 @@ const AboutSection = () => {
                         <TabButton selectTab={() => handleTabChange('experience')} active={tab === 'experience'}>
                         {' '}
                             Experience{' '}
+                        </TabButton>
+                        <TabButton selectTab={() => handleTabChange('organizations')} active={tab === 'organizations'}>
+                        {' '}
+                            Organizations{' '}
                         </TabButton>
                         <TabButton selectTab={() => handleTabChange('award')} active={tab === 'award'}>
                         {' '}
