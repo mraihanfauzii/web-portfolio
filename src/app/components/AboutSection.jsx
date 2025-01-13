@@ -3,63 +3,250 @@ import React, { useTransition, useState } from 'react'
 import Image from 'next/image'
 import TabButton from './TabButton'
 
-const TAB_DATA = [
+const SKILLS_DATA = [
     {
-        title: "Skills",
-        id: "skills",
-        content: (
-            <ul className='list-disc pl-2'>
-                <li>Mobile Application Development (Kotlin, Flutter, React Native) - 2 Years Experience (11 Month Work Experience)</li>
-                <li>Front-End Web Development (HTML, CSS, Javascript, Next JS) - 5 Month Experience</li>
-                <li>Back-End Web Development (Express JS, Nest JS, Laravel) - 4 Month Experience</li>
-                <li>Computer Vision and Machine Learning - 3 Month Experience</li>
-                <li>UI/UX - 5 Month Experience</li>
-            </ul>
-        )
+        title: "Mobile Application Development",
+        language:"Kotlin, Flutter, React Native",
+        totalDuration: "2 Years Experience (11 Months Work Experience)"
     },
     {
-        title: "Experience",
-        id: "experience",
-        content: (
-            <ul className='list-disc pl-2'>
-                <li>Software Engineering : Implementation and Testing Lecturer Assistant at Telkom University (Oct 2024 - Present)</li>
-                <li>Back-End Mentee of Digistar Class 2024 at Digistar Club by Telkom Indonesia (Aug - Sep 2024)</li>
-                <li>Mobile Engineer Intern at Telkom Indonesia (Apr - Sep 2024)</li>
-                <li>Software Engineering : Implementation and Testing Lecturer Assistant at Telkom University (Oct 2023 - Jan 2024)</li>
-                <li>Mobile Engineer Intern at Telkom Indonesia (Aug - Dec 2023)</li>
-                <li>Mobile Development Learning Path at Bangkit Academy led by Google, Tokopedia, Gojek, & Traveloka (Feb - Jul 2023)</li>
-            </ul>
-        )
+        title: "Front-End Web Development",
+        language:"HTML, CSS, Javascript, Next JS",
+        totalDuration: "5 Months Experience"
     },
     {
-        title: "Organizations and Committees",
-        id: "organizations",
-        content: (
-            <ul className='list-disc pl-2'>
-                <li>Head of Publication, Decoration, and Documentation of MotionHack 3.0 by Mobile Innovation Laboratory Telkom University (Mar - Apr 2024)</li>
-                <li>Head of Public Relations (Laboratory Assistant) at Mobile Innovation Laboratory Telkom University (Aug 2023 - Aug 2024)</li>
-                <li>Staff of Publication & Creative of Interfest 2022 by The Informatics Undergraduate Student Association of Telkom University (Sep - Dec 2022)</li>
-                <li>Creative Bureau Staff & Secretary at The Informatics Undergraduate Student Association of Telkom University (Apr 2022 - Mar 2023)</li>
-            </ul>
-        )
+        title: "Back-End Web Development",
+        language:"Express JS, Nest JS, Laravel",
+        totalDuration: "4 Months Experience"
     },
     {
-        title: "Honors & Awards",
-        id: "award",
-        content: (
-            <ul className='list-disc pl-2'>
-                <li>Graduated with honors (Cum Laude) from the Bachelor of Informatics program at Telkom University with a GPA of 3.73/4.00.</li>
-                <li>3rd Place in Hackathon ITFest 2024 by IT Fest Micro IPB</li>
-                <li>Author and Presenter at the 7th International Conference on Data Science and Its Applications (ICoDSA) 2024</li>
-                <li>3rd Place in JBC Business Plan Competition 2022 by Search Telkom University</li>
-                <li>The 5 Best Project Plans Award - Z Future Leader 2021 by CentennialZ</li>
-            </ul>
-        )
+        title: "Computer Vision and Machine Learning",
+        totalDuration: "3 Months Experience"
+    },
+    {
+        title: "UI/UX",
+        totalDuration: "5 Months Experience"
     }
 ]
 
+const EXPERIENCE_DATA = [
+    {
+        image: "/images/logo/telkom_university.png",
+        title: "Software Engineering Lecturer Assistant",
+        institution: "Telkom University",
+        date: "Oct 2024 - Jan 2025",
+        totalDuration: "4 months"
+    },
+    {
+        image: "/images/logo/digistar_club.png",
+        title: "Back-End Mentee of Digistar Class",
+        institution: "Digistar Club by Telkom Indonesia",
+        date: "Aug - Sep 2024",
+        totalDuration: "2 months"
+    },
+    {
+        image: "/images/logo/telkom_indonesia.png",
+        title: "Mobile Engineer Intern",
+        institution: "Telkom Indonesia",
+        date: "Apr - Sep 2024",
+        totalDuration: "6 months"
+    },
+    {
+        image: "/images/logo/telkom_university.png",
+        title: "Software Engineering Lecturer Assistant",
+        institution: "Telkom University",
+        date: "Oct 2023 - Jan 2024",
+        totalDuration: "4 months"
+    },
+    {
+        image: "/images/logo/telkom_indonesia.png",
+        title: "Mobile Engineer Intern",
+        institution: "Telkom Indonesia",
+        date: "Aug - Des 2023",
+        totalDuration: "5 months"
+    },
+    {
+        image: "/images/logo/bangkit.png",
+        title: "Mobile Development Learning Path",
+        institution: "Bangkit Academy led by Google, Tokopedia, Gojek, & Traveloka",
+        date: "Feb - Jul 2023",
+        totalDuration: "6 months"
+    }
+]
+
+const ORGANIZATIONS_DATA = [
+    {
+        image: "/images/logo/motion_lab.png",
+        title: "Head of Publication, Decoration, and Documentation of MotionHack 3.0",
+        institution: "Mobile Innovation Laboratory",
+        date: "Mar - Apr 2024",
+        totalDuration: "2 months"
+    },
+    {
+        image: "/images/logo/motion_lab.png",
+        title: "Head of Public Relations (Laboratory Assistant)",
+        institution: "Mobile Innovation Laboratory",
+        date: "Aug 2023 - Aug 2024",
+        totalDuration: "13 months"
+    },
+    {
+        image: "/images/logo/hima_if.png",
+        title: "Interfest Publication & Creative Staff",
+        institution: "Himpunan Mahasiswa S1 Informatika Telkom University",
+        date: "Sep - Des 2022",
+        totalDuration: "4 months"
+    },
+    {
+        image: "/images/logo/hima_if.png",
+        title: "Creative Bureau Staff & Secretary",
+        institution: "Himpunan Mahasiswa S1 Informatika Telkom University",
+        date: "Apr 2022 - Mar 2023",
+        totalDuration: "12 months"
+    }
+]
+
+const HONOR_AWARDS_DATA = [
+    {
+        image: "/images/logo/telkom_university.png",
+        title: "Graduated with honors (Cum Laude) from the Bachelor of Informatics program with a GPA of 3.73/4.00",
+        institution: "Telkom University",
+        monthYear: "Dec 2024"
+    },
+    {
+        image: "/images/logo/itfest.png",
+        title: "3rd Place in Hackathon ITFest",
+        institution: "Himavo Micro IT & GDSC IPB University",
+        monthYear: "Sep 2024"
+    },
+    {
+        image: "/images/logo/icodsa.png",
+        title: "Author and Presenter",
+        institution: "The 7th International Conference on Data Science and Its Applications (ICoDSA)",
+        monthYear: "Jul 2024"
+    },
+    {
+        image: "/images/logo/search.png",
+        title: "3rd Place in JBC Business Plan Competition",
+        institution: "Search Telkom University",
+        monthYear: "Sep 2022"
+    },
+    {
+        image: "/images/logo/centennialz.png",
+        title: "The 5 Best Project Plans Award in Z Future Leader",
+        institution: "CentennialZ",
+        monthYear: "Sep 2021"
+    }
+]
+
+function renderSkills() {
+    return (
+      <div>
+        {SKILLS_DATA.map((skill, idx) => (
+          <div key={idx} className={`flex flex-row gap-3 items-center py-4
+            ${idx < SKILLS_DATA.length - 1 ? "border-b border-gray-600" : ""}
+          `}>
+            <div className="flex flex-col">
+                <h3 className="font-semibold text-base mb-1">{skill.title}</h3>
+                <p className="text-sm text-gray-300 mb-1">{skill.language}</p>
+                <p className="text-sm text-gray-400 mb-1">
+                    {skill.totalDuration}
+                </p>
+            </div>
+          </div>
+        ))}
+      </div>
+    );
+  }
+  
+  function renderExperiences(dataArray) {
+    return (
+        <div>
+          {dataArray.map((item, idx) => (
+            <div
+              key={idx}
+              className={`flex flex-row gap-3 items-center py-4
+                ${idx < dataArray.length - 1 ? "border-b border-gray-600" : ""}
+              `}
+            >
+              <div className="flex-shrink-0 flex items-center justify-center">
+                <Image
+                  src={item.image}
+                  alt={item.title}
+                  width={50}
+                  height={50}
+                  className="object-contain"
+                />
+              </div>
+              <div className="flex flex-col">
+                <h3 className="font-semibold text-base mb-1">{item.title}</h3>
+                <p className="text-sm text-gray-300 mb-1">{item.institution}</p>
+                <div className="flex items-center gap-2 text-sm text-gray-400">
+                  <span >{item.date}</span>
+                  <span>•</span>
+                  <span>{item.totalDuration}</span>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      );
+    }
+  
+  function renderHonorsAwards() {
+    return (
+      <div>
+        {HONOR_AWARDS_DATA.map((award, idx) => (
+          <div key={idx} className={`flex flex-row gap-3 items-center py-4
+            ${idx < HONOR_AWARDS_DATA.length - 1 ? "border-b border-gray-600" : ""}
+          `}>
+            <div className="flex-shrink-0">
+              <Image
+                src={award.image}
+                alt={award.title}
+                width={50}
+                height={50}
+                className="object-contain"
+              />
+            </div>
+            <div>
+              <h3 className="font-semibold text-base mb-1">{award.title}</h3>
+              <div className="flex items-center gap-2 text-sm text-gray-400">
+                  <span>{award.institution}</span>
+                  <span>•</span>
+                  <span>{award.monthYear}</span>
+                </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    );
+  }
+
+  const TAB_DATA = [
+    {
+      title: "Skills",
+      id: "skills",
+      content: renderSkills()
+    },
+    {
+      title: "Experience",
+      id: "experience",
+      content: renderExperiences(EXPERIENCE_DATA)
+    },
+    {
+      title: "Organizations",
+      id: "organizations",
+      content: renderExperiences(ORGANIZATIONS_DATA)
+    },
+    {
+      title: "Honors & Awards",
+      id: "award",
+      content: renderHonorsAwards()
+    }
+  ];
+
 const AboutSection = () => {
-    const [tab, setTab] = useState('skills')
+    const [tab, setTab] = useState('experience')
     const [isPending, startTransition] = useTransition()
 
     const handleTabChange = (id) => {
@@ -74,12 +261,12 @@ const AboutSection = () => {
                 <Image src='/images/programmer.jpg' width={700} height={700}/>
                 <div className='mt-4 md:mt-0 text-left flex flex-col h-full'>
                     <h2 className='text-4xl font-bold text-white mb-4'>About Me</h2>
-                    <p className='text-base lg:text-lg'>
-                    I am a passionate Mobile developer with a strong academic background in computer science. Proficient in Kotlin, React Native, and Flutter, I have experience developing various simple Android apps. 
+                    <p className='text-base lg:text-lg [text-align:justify]'>
+                    I am a passionate Software Engineer with a strong academic background in computer science. Proficient in Kotlin, Flutter, and Javascript, I have experience developing various mobile and web applications. 
                     
                     I am actively seeking a challenging position where I can apply my skills and knowledge to make a positive impact. Highly motivated and results-oriented, I possess a strong work ethic. Additionally, I am a team player and always eager to learn. Thank you for visiting my portfolio website! 
                     </p>
-                    <div className='flex flex-row justify-start mt-8'>
+                    <div className='flex flex-row justify-start mt-5'>
                         <TabButton selectTab={() => handleTabChange('skills')} active={tab === 'skills'}>
                         {' '}
                             Skills{' '}
@@ -94,10 +281,10 @@ const AboutSection = () => {
                         </TabButton>
                         <TabButton selectTab={() => handleTabChange('award')} active={tab === 'award'}>
                         {' '}
-                            Honors & Awards{' '}
+                            Awards{' '}
                         </TabButton>
                     </div>
-                    <div className='mt-8'>{TAB_DATA.find((t) => t.id === tab).content}</div>
+                    <div className='mt-2'>{TAB_DATA.find((t) => t.id === tab).content}</div>
                 </div>
             </div>
         </section>

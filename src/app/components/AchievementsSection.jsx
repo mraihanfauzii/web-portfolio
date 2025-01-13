@@ -15,7 +15,7 @@ const achievementsList = [
     },
     {
         metric: 'Honors & Awards',
-        value: '4',
+        value: '5',
     },
     {
         metric: 'Month Work Experience',
