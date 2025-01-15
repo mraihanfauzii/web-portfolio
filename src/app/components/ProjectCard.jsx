@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useState } from 'react'
+import Image from "next/image";
 import { CodeBracketIcon, EyeIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link'
 
@@ -14,16 +15,25 @@ const ProjectCard = ({
     showGitUrl,
     showPreviewUrl
   }) => {
+    const [isLoading, setIsLoading] = useState(true);
+
     return (
-      <div className="bg-[#181818] rounded-xl border border-gray-600 m-0 shadow-md 
+    <div className="bg-[#181818] rounded-xl border border-gray-600 m-0 shadow-md 
                       hover:shadow-lg hover:-translate-y-1 hover:translate-x-1  
                       transition-all duration-300 cursor-pointer">
-        <div
-          className="h-52 md:h-72 rounded-t-xl relative group"
-          style={{
-            background: `url(${imgUrl}) center/contain no-repeat`
-          }}
-        >
+        <div className="h-52 md:h-72 rounded-t-xl relative group overflow-hidden">
+            {isLoading && (
+            <div className="absolute inset-0 z-10 flex items-center justify-center bg-black bg-opacity-60">
+                <div className="w-8 h-8 border-4 border-t-transparent border-white rounded-full animate-spin" />
+            </div>
+            )}
+            <Image
+            src={imgUrl}
+            alt={title}
+            layout='fill'
+            objectFit='cover'
+            onLoadingComplete={() => setIsLoading(false)}
+            />
         </div>
   
         <div className="text-white rounded-b-xl mt-3 bg-[#181818] px-4 mb-4">
@@ -44,7 +54,7 @@ const ProjectCard = ({
             {dateOrPublisher && (
                 <p className="text-[#ADB7BE] text-justify mb-5">{dateOrPublisher}</p>
             )}
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap gap-2 text-center">
                 {type.map((t, index) => (
                     <span
                         key={index}

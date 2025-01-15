@@ -1,7 +1,7 @@
 'use client'
 import React, { useState, useRef } from 'react'
 import ProjectCard from './ProjectCard'
-import { motion, useInView } from 'framer-motion'
+import { motion } from 'framer-motion'
 
 const certificatesData = [
     {
@@ -259,15 +259,13 @@ const certificatesData = [
 ]
 
 const CertificatesSections = () => {
-    const [tag] = useState("Cert")
     const ref = useRef(null)
-    const isInView = useInView(ref, { once: true })
-
-    const filteredProjects = certificatesData.filter((project) => 
-        project.tag.includes(tag)
-    )
 
     const [selectedCertificate, setSelectedCertificate] = useState(null);
+    const [showAll, setShowAll] = useState(false);
+
+    const listA = certificatesData.slice(0, 12);
+    const listB = certificatesData.slice(12)
 
     const openModal = (project) => {
         setSelectedCertificate(project)
@@ -282,6 +280,69 @@ const CertificatesSections = () => {
         animate: { y:0, opacity: 1 }
     }
 
+    function renderListA() {
+        return listA.map((item, i) => {
+            const delay = i * 0.4;
+            return (
+            <motion.li
+                key={item.id}
+                initial="initial"
+                animate="animate"
+                variants={cardVariants}
+                transition={{ duration: 0.3, delay }}
+            >
+                <div onClick={() => openModal(item)}>
+                    <ProjectCard 
+                        key={item.id} 
+                        title={item.title} 
+                        dateOrPublisher={item.dateOrPublisher} 
+                        type={item.type}
+                        imgUrl={item.image}
+                        gitUrl={''}
+                        previewUrl={item.previewUrl}
+                        showGitUrl = {false}
+                        showPreviewUrl = {true}
+                    />
+                </div>
+            </motion.li>
+            );
+        });
+    }
+        
+    function renderListB() {
+    if (!showAll) return null;
+    return listB.map((item, i) => {
+        const delay = i * 0.4;
+        return (
+        <motion.li
+            key={item.id}
+            initial="initial"
+            animate="animate"
+            variants={cardVariants}
+            transition={{ duration: 0.3, delay }}
+        >
+            <div onClick={() => openModal(item)}>
+                <ProjectCard 
+                    key={item.id} 
+                    title={item.title} 
+                    dateOrPublisher={item.dateOrPublisher} 
+                    type={item.type}
+                    imgUrl={item.image}
+                    gitUrl={''}
+                    previewUrl={item.previewUrl}
+                    showGitUrl = {false}
+                    showPreviewUrl = {true}
+                />
+            </div>
+        </motion.li>
+        );
+    });
+    }
+        
+    function handleToggle() {
+        setShowAll((prev) => !prev);
+    }
+
     return (
         <section id='certificates'>
             <br />
@@ -293,30 +354,16 @@ const CertificatesSections = () => {
             <div className='text-white flex flex-row justify-center items-center gap-2 py-6'>
             </div>
             <ul ref={ref} className='grid md:grid-cols-3 gap-8 md:gap-12'>
-                {filteredProjects.map((project, index) => (
-                    <motion.li 
-                        key={index}
-                        variants={cardVariants} 
-                        initial='initial' 
-                        animate={isInView ? 'animate' : 'initial'}
-                        transition={{ duration: 0.3, delay: index * 0.4 }}
-                    >
-                        <div onClick={() => openModal(project)}>
-                            <ProjectCard 
-                                key={project.id} 
-                                title={project.title} 
-                                dateOrPublisher={project.dateOrPublisher} 
-                                type={project.type}
-                                imgUrl={project.image}
-                                gitUrl={''}
-                                previewUrl={project.previewUrl}
-                                showGitUrl = {false}
-                                showPreviewUrl = {true}
-                            />
-                        </div>
-                    </motion.li>
-                ))}
+                {renderListA()}
+                {renderListB()}
             </ul>
+            <div className="flex justify-center mt-4">
+                <button onClick={handleToggle}
+                className="px-4 py-2 text-white bg-gray-800 rounded hover:bg-gray-700"
+                >
+                {showAll ? "Show Less" : "Show More"}
+                </button>
+            </div>
             {selectedCertificate && (
                 <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70" 
                 onClick={closeModal}
@@ -369,7 +416,7 @@ const CertificatesSections = () => {
                         rel="noopener noreferrer"
                         className="inline-block border rounded px-3 py-2 mt-2 hover:bg-white hover:text-black transition-colors"
                     >
-                        View Certificate
+                        Download Certificate
                     </a>
                     )}
                 </div>
