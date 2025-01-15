@@ -151,6 +151,8 @@ const ProjectsSections = () => {
     const [tag, setTag] = useState("Mobile")
     const ref = useRef(null)
     const isInView = useInView(ref, { once: true })
+
+    const [selectedProject, setSelectedProject] = useState(null);
     
     const handleTagChange = (newTag) => {
         setTag(newTag)
@@ -159,6 +161,15 @@ const ProjectsSections = () => {
     const filteredProjects = projectsData.filter((project) => 
         project.tag.includes(tag)
     )
+
+    const openModal = (project) => {
+        setSelectedProject(project)
+    }
+
+    const closeModal = () => {
+        setSelectedProject(null)
+    }
+
 
     const cardVariants = {
         initial: { y:50, opacity: 0 },
@@ -170,7 +181,7 @@ const ProjectsSections = () => {
             <h2 className='text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12'>
                 My Projects
             </h2>
-            <div className='text-white flex flex-row justify-center items-center gap-2 py-6'>
+            <div className='text-white flex flex-row flex-wrap justify-center items-center gap-2 py-6'>
                 <ProjectTag 
                     onClick={handleTagChange} 
                     name="Mobile" 
@@ -196,20 +207,99 @@ const ProjectsSections = () => {
                         animate={isInView ? 'animate' : 'initial'}
                         transition={{ duration: 0.3, delay: index * 0.4 }}
                     >
-                        <ProjectCard 
-                            key={project.id} 
-                            title={project.title} 
-                            stacks={project.stacks}
-                            description={project.description} 
-                            imgUrl={project.image}
-                            gitUrl={project.gitUrl}
-                            previewUrl={project.previewUrl}
-                            showGitUrl = {project.title !== 'Seller Dashboard PaDi UMKM'}
-                            showPreviewUrl = {false}
-                        />
+                        <div onClick={() => openModal(project)}>
+                            <ProjectCard
+                                title={project.title}
+                                stacks={project.stacks}
+                                description={project.description}
+                                imgUrl={project.image}
+                                gitUrl={project.gitUrl}
+                                previewUrl={project.previewUrl}
+                                showGitUrl={project.title !== "Seller Dashboard PaDi UMKM"}
+                                showPreviewUrl={false}
+                            />
+                        </div>
                     </motion.li>
                 ))}
             </ul>
+
+            {selectedProject && (
+                <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70" 
+                onClick={closeModal}
+                >
+                <div className="bg-[#1e1e1e] w-11/12 md:w-2/3 lg:w-1/2 max-h-[90vh] overflow-auto relative rounded-2xl p-6 text-white"
+                onClick={(e) => e.stopPropagation()}
+                    >
+                    <button
+                    className="absolute top-5 right-5 text-xl font-bold"
+                    onClick={closeModal}>
+                    X
+                    </button>
+
+                    <h2 className="text-2xl font-bold text-center mb-4">{selectedProject.title}</h2>
+                    <div className="flex justify-center mb-4">
+                        <img
+                        src={selectedProject.image}
+                        alt={selectedProject.title}
+                        className="max-h-80 object-contain"
+                        />
+                    </div>
+                    <p className="text-gray-200 mb-4">{selectedProject.description}</p>
+
+                    {selectedProject.keyFeatures && (
+                        <div className="mb-4">
+                            <h3 className="text-lg font-semibold mb-2">Key Features</h3>
+                            <ul className="list-disc list-inside space-y-1">
+                                {selectedProject.keyFeatures.map((feature, i) => (
+                                <li key={i}>{feature}</li>
+                                ))}
+                            </ul>
+                        </div>
+                    )}
+
+                    {selectedProject.keyTechnologies && (
+                        <div className="mb-4">
+                            <h3 className="text-lg font-semibold mb-2">Key Technologies</h3>
+                            <ul className="list-disc list-inside space-y-1">
+                                {selectedProject.keyTechnologies.map((technologies, i) => (
+                                <li key={i}>{technologies}</li>
+                                ))}
+                            </ul>
+                        </div>
+                    )}
+
+                    {selectedProject.myRole && (
+                        <div className="mb-4">
+                            <h3 className="text-lg font-semibold mb-2">My Role</h3>
+                            <ul className="list-disc list-inside space-y-1">
+                                {selectedProject.myRole.map((myRole, i) => (
+                                <li key={i}>{myRole}</li>
+                                ))}
+                            </ul>
+                        </div>
+                    )}
+
+                    {selectedProject.projectBackground && (
+                        <div className="mb-4">
+                            <h3 className="text-lg font-semibold mb-2">Project Background</h3>
+                            <p>{selectedProject.projectBackground}</p>
+                        </div>
+                    )}
+
+                    {selectedProject.gitUrl && selectedProject.gitUrl !== "/" && (
+                    <a
+                        href={selectedProject.gitUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-block border rounded px-3 py-2 mt-2 hover:bg-white hover:text-black transition-colors"
+                    >
+                        View GitHub
+                    </a>
+                    )}
+                </div>
+                </div>
+            )}
+            
         </section>
     )
 }

@@ -180,7 +180,7 @@ function renderSkills() {
               <div className="flex flex-col">
                 <h3 className="font-semibold text-base mb-1">{item.title}</h3>
                 <p className="text-sm text-gray-300 mb-1">{item.institution}</p>
-                <div className="flex items-center gap-2 text-sm text-gray-400">
+                <div className="flex flex-wrap items-center gap-2 text-sm text-gray-400">
                   <span >{item.date}</span>
                   <span>•</span>
                   <span>{item.totalDuration}</span>
@@ -266,7 +266,7 @@ const AboutSection = () => {
                     
                     I am actively seeking a challenging position where I can apply my skills and knowledge to make a positive impact. Highly motivated and results-oriented, I possess a strong work ethic. Additionally, I am a team player and always eager to learn. Thank you for visiting my portfolio website! 
                     </p>
-                    <div className='flex flex-row justify-start mt-5'>
+                    <div className="flex flex-row flex-wrap justify-center lg:justify-start gap-4 mt-5">
                         <TabButton selectTab={() => handleTabChange('skills')} active={tab === 'skills'}>
                         {' '}
                             Skills{' '}

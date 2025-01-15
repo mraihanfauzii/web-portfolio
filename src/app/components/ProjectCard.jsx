@@ -2,44 +2,61 @@ import React from 'react'
 import { CodeBracketIcon, EyeIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link'
 
-const ProjectCard = ({ imgUrl, title, stacks = [], description, gitUrl, previewUrl, showGitUrl, showPreviewUrl }) => {
-  return (
-    <div>
-        <div 
-            className='h-52 md:h-72 rounded-t-xl relative group' 
-            style={{background: `url(${imgUrl})`, backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat'}}>
-            <div className='overlay flex items-center justify-center absolute top-0 left-0 w-full h-full bg-[#181818] bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500'>
-                {showGitUrl && (
-                    <Link 
-                        href={gitUrl}
-                        target="_blank" rel="noopener noreferrer"
-                        className='h-14 w-14 mr-3 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link'>
-                        <CodeBracketIcon className='h-10 w-10 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer group-hover/link:text-white'/>
-                    </Link>
-                )}
-                {showPreviewUrl && (
-                <Link 
-                    href={previewUrl} 
-                    target="_blank" rel="noopener noreferrer"
-                    className='h-14 w-14 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link'>
-                    <EyeIcon className='h-10 w-10 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer group-hover/link:text-white'/>
-                </Link>
-                )}
-            </div>
+const ProjectCard = ({
+    imgUrl,
+    title,
+    stacks = [],
+    description,
+    dateOrPublisher,
+    type= [],
+    gitUrl,
+    previewUrl,
+    showGitUrl,
+    showPreviewUrl
+  }) => {
+    return (
+      <div className="bg-[#181818] rounded-xl border border-gray-600 m-0 shadow-md 
+                      hover:shadow-lg hover:-translate-y-1 hover:translate-x-1  
+                      transition-all duration-300 cursor-pointer">
+        <div
+          className="h-52 md:h-72 rounded-t-xl relative group"
+          style={{
+            background: `url(${imgUrl}) center/contain no-repeat`
+          }}
+        >
         </div>
-        <div className='text-white rounded-b-xl mt-3 bg-[#181818]py-6 px-4'>
-            <h5 className='text-xl font-semibold mb-2'>{title}</h5>
-            <div className='flex flex-wrap gap-2 mb-4'>
+  
+        <div className="text-white rounded-b-xl mt-3 bg-[#181818] px-4 mb-4">
+            <h5 className="text-xl font-semibold mb-4">{title}</h5>
+            {showGitUrl && (
+            <div className="flex flex-wrap gap-2 mb-4">
                 {stacks.map((stack, index) => (
-                    <span key={index} className='bg-[#2A2A2A] text-sm text-white py-1 px-3 rounded-full'>
-                        {stack}
+                    <span
+                    key={index}
+                    className="bg-[#2A2A2A] text-sm text-center text-white py-1 px-3 rounded-full"
+                    >
+                    {stack}
                     </span>
                 ))}
             </div>
-            <p className='text-[#ADB7BE]'>{description}</p>
+            )}
+            <p className="text-[#ADB7BE] text-justify">{description}</p>
+            {dateOrPublisher && (
+                <p className="text-[#ADB7BE] text-justify mb-5">{dateOrPublisher}</p>
+            )}
+            <div className="flex flex-wrap gap-2">
+                {type.map((t, index) => (
+                    <span
+                        key={index}
+                        className="bg-[#2A2A2A] text-sm text-white py-1 px-3 rounded-full"
+                    >
+                        {t}
+                    </span>
+                ))}
+            </div>
         </div>
-    </div>
-  )
-}
-
-export default ProjectCard
+      </div>
+    );
+  };
+  
+  export default ProjectCard;

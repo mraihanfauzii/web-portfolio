@@ -50,7 +50,7 @@ const HeroSection = () => {
                 initial={{ opacity: 0, scale: 0.5 }} 
                 animate={{ opacity: 1, scale: 1 }} 
                 transition={{ duration: 0.5 }}  
-                className='col-span-4 place-self-center mt-4 lg:mt-0'
+                className='col-span-4 place-self-center mt-12 lg:mt-0'
             >
                 <div className='rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] relative'>
                     <Image
