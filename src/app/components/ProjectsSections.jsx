@@ -12,13 +12,23 @@ const projectsData = [
         image: '/images/projects/DevLabs.png',
         tag: ['Mobile'],
         stacks: ['Kotlin', 'MVVM', 'Recommender System', 'Google Map API', 'Youtube Player', 'ROOM DAO', 'Camera', 'Datastore', 'Retrofit'],
+        keyFeatures: [
+            "An architect portfolio and rating for clients to browse",
+            "Progress tracking similar to online shopping",
+            "System recommender",
+          ],
+          keyTechnologies: [
+            "Mobile application, built using Kotlin, follows the MVVM architecture (Model-View-ViewModel) to enhance code structure and maintainability. It also features robust error handling to ensure reliable performance. For location-based project features, the app integrates the Google Maps API to help users determine and display project locations. The mobile app also uses SQLite for storing favorites, including architect portfolios and articles, offering users convenient offline access to key information. ",
+            "Meanwhile, core project data and other client information are stored in PostgreSQL, connected to the backend for secure and scalable storage. The backend is built using Node.js and Express, ensuring seamless data management and communication.",
+            "A recommendation engine, developed with Python and Flask, analyzes user preferences like budget, location, and style to provide tailored architect suggestions via API integration.",
+          ],
         gitUrl: 'https://github.com/mraihanfauzii/DevLabs-User-Kotlin',
         previewUrl: '/'
     },
     {
         id: 2,
         title: 'Fitnessist',
-        description: 'This application is equipped with features such as exercises, food scanning with computer vision, steps based on selected programs, calorie counters, gamification, sports articles and healthy living tips, as well as user personalization.',
+        description: 'This application is equipped with features such as exercises, food scanning with computer vision, steps based on selected programs, calorie counters, gamification, sports articles and healthy living tips, as well as user personalization. ',
         image: '/images/projects/Fitnessist.png',
         tag: ['Mobile'],
         stacks: ['Kotlin', 'MVVM', 'Computer Vision', 'Camera', 'Retrofit'],
@@ -100,7 +110,7 @@ const projectsData = [
         title: 'My Portfolio Website',
         description: 'This website, developed with NextJS.',
         image: '/images/projects/MyPortfolioWebsite.png',
-        tag: ['Front-End'],
+        tag: ['FE & BE'],
         stacks: ['NextJs', 'ReactJs', 'EmailJs'],
         gitUrl: 'https://github.com/mraihanfauzii/web-portfolio',
         previewUrl: '/'
@@ -110,7 +120,7 @@ const projectsData = [
         title: 'Warung Tani',
         description: 'Warung Tani is a marketplace that provides services in the form of intermediaries between farmers and consumers.',
         image: '/images/projects/Warung-Tani_Web.png',
-        tag: ['Front-End'],
+        tag: ['FE & BE'],
         stacks: ['Laravel', 'PHP', 'Vanilla CSS', 'MySQL'],
         gitUrl: 'https://github.com/mraihanfauzii/WarungTaniWebAndAPI',
         previewUrl: '/'
@@ -120,7 +130,7 @@ const projectsData = [
         title: 'Rentify',
         description: 'Rentify is a web-based application that is used to book sports venues, music studios, ballrooms, and concert venues.',
         image: '/images/projects/Rentify.png',
-        tag: ['Front-End'],
+        tag: ['FE & BE'],
         stacks: ['Laravel', 'PHP', 'Vanilla CSS', 'MySQL'],
         gitUrl: 'https://github.com/mraihanfauzii/RentifyWeb',
         previewUrl: '/'
@@ -130,7 +140,7 @@ const projectsData = [
         title: 'Seller Dashboard PaDi UMKM',
         description: 'This project is an assignment from DigistarClass, involving the task of remaking the seller dashboard website with suggested additional features. In this project, there are several features to retrieve various order data. The backend is built using NestJS.',
         image: '/images/projects/PaDiUMKM.png',
-        tag: ['Back-End'],
+        tag: ['FE & BE'],
         stacks: ['NestJs', 'NodeJs', 'Javascript', 'MongoDB'],
         gitUrl: '/',
         previewUrl: '/'
@@ -140,11 +150,125 @@ const projectsData = [
         title: 'E-Commerce API with Item from FakeStoreAPI',
         description: 'There are admin and customer roles, CRUD User, CRUD Item, CRUD Order, Postman Collection.',
         image: '/images/projects/E-CommerceAPI.png',
-        tag: ['Back-End'],
+        tag: ['FE & BE'],
         stacks: ['ExpressJs', 'NodeJs', 'Javascript', 'MongoDB'],
-        gitUrl: 'https://github.com/mraihanfauzii/tugas-6-digistarclass-be',
+        gitUrl: 'https://github.com/mraihanfauzii/E-Commerce-API-with-Item-from-FakeStoreAPI_Tugas-6-DigistarClass-BE',
         previewUrl: '/'
     },
+    {
+        id: 15,
+        title: 'Flutter TMDB Clean Architecture',
+        description: '',
+        image: '/images/projects/tmdb.jpg',
+        tag: ['Mobile'],
+        stacks: ['Flutter', 'BLoC', 'Firebase Analytics & Crashlytics', 'Modularisasi'],
+        gitUrl: 'https://github.com/mraihanfauzii/TMDB-Flutter-Expert-Dicoding',
+        previewUrl: '/'
+    },
+    {
+        id: 16,
+        title: 'Fruit Quality Classification using MobileNetV2',
+        description: 'Proyek ini dibuat dengan tujuan membuat sistem klasifikasi gambar untuk mendeteksi apakah suatu buah itu masih layak konsumsi atau sudah tidak layak yaitu sudah busuk..',
+        image: '/images/projects/fruit_quality_classification.jpg',
+        tag: ['Machine Learning'],
+        gitUrl: 'https://github.com/mraihanfauzii/Fruit-Quality-Classification',
+        previewUrl: '/'
+    },
+    {
+        id: 17,
+        title: 'Predictive Analytics : Time Series Forecasting NVDA Stock using LSTM, GRU, CNN',
+        description: 'Prediksi time series pada proyek ini tidak dimaksudkan sebagai satu-satunya acuan, melainkan sebagai indikator tambahan dalam strategi investasi. Metode ini juga dapat diterapkan ulang untuk saham lain dengan cara melatih ulang model menggunakan data harga saham yang ingin diprediksi.',
+        image: '/images/projects/nvda_time_series_forecasting.jpg',
+        tag: ['Machine Learning'],
+        gitUrl: 'https://github.com/mraihanfauzii/Predictive-Analytics-Time-Series-Forecasting-NVDA-Stock',
+        previewUrl: '/'
+    },
+    {
+        id: 18,
+        title: 'Music Recommendation System using Content Based Filtering and Collaborative Filtering',
+        description: 'Proyek ini berhasil menghadirkan sistem rekomendasi musik hybrid: TF‑IDF Cosine mengisi celah cold‑start, sedangkan RecommenderNet menyajikan rekomendasi personal dengan RMSE rendah. Perbandingan kedua pendekatan menunjukkan trade-off: Content-based menghasilkan rekomendasi yang sangat tepat sasaran secara kesamaan konten, namun mungkin kurang surprise. Collaborative filtering mampu menghasilkan rekomendasi yang lebih beragam dan personal, tetapi performa model sangat bergantung pada data..',
+        image: '/images/projects/recommendation_system.jpg',
+        tag: ['Machine Learning'],
+        gitUrl: 'https://github.com/mraihanfauzii/Music-Recommendation-System',
+        previewUrl: '/'
+    },
+    {
+        id: 19,
+        title: 'HR Data Science Solution - Employee Attrition Analysis',
+        description: 'Cakupan proyek ini meliputi analisis menyeluruh terhadap data historis karyawan PT Jaya Jaya Maju guna mengidentifikasi pola attrition dan faktor-faktor penyebabnya, pembuatan dashboard bisnis interaktif sebagai alat monitoring dan insight, pembangunan model machine learning sederhana untuk memprediksi attrition, serta rekomendasi tindakan strategis',
+        image: '/images/projects/attrition_analysis.jpg',
+        tag: ['Machine Learning'],
+        stacks: ['Metabase', 'Tensorflow'],
+        gitUrl: 'https://github.com/mraihanfauzii/hr-data-science-solutions',
+        previewUrl: '/'
+    },
+    {
+        id: 20,
+        title: 'Solving Educational Institution Problems with Data Science - Student Dropout Analysis',
+        description: 'Cakupan proyek ini meliputi analisis menyeluruh terhadap data murid Jaya Jaya Institut guna mengidentifikasi pola dropout dan faktor-faktor penyebabnya, pembuatan dashboard bisnis sebagai alat monitoring dan insight, pembangunan model machine learning sederhana untuk memprediksi status(dropout/graduate/enrolled), serta rekomendasi tindakan strategis.',
+        image: '/images/projects/dropout_analysis.jpg',
+        tag: ['Machine Learning'],
+        stacks: ['Metabase', 'Streamlit', 'Tensorflow'],
+        gitUrl: 'https://github.com/mraihanfauzii/student-dropout-prediction',
+        previewUrl: 'https://student-dropout-prediction-mraihanfauzii.streamlit.app/'
+    },
+    {
+        id: 21,
+        title: 'Membangun Sistem Machine Learning',
+        description: 'There are admin and customer roles, CRUD User, CRUD Item, CRUD Order, Postman Collection.',
+        image: '/images/projects/msml.png',
+        tag: ['Machine Learning'],
+        stacks: ['Github Action', 'Prometheus', 'Grafana', 'Regression : House Price Prediction'],
+        gitUrl: '/',
+        previewUrl: '/'
+    },
+    {
+        id: 22,
+        title: 'Clustering and Classification on Bank Transaction Dataset',
+        description: '',
+        image: '/images/projects/clustering.png',
+        tag: ['Machine Learning'],
+        gitUrl: '/',
+        previewUrl: '/'
+    },
+    {
+        id: 23,
+        title: 'Brazilian E-Commerce Analysis',
+        description: '',
+        image: '/images/projects/olist.png',
+        tag: ['Machine Learning'],
+        gitUrl: 'https://github.com/mraihanfauzii/Brazilian_E-Commerce_Public_Dataset_Analysis',
+        previewUrl: 'https://mraihanfauzii-brazilian-e-commerce-pu-dashboarddashboard-0lkl5b.streamlit.app/'
+    },
+    {
+        id: 24,
+        title: 'Sentiment Analysis Gopay App',
+        description: '',
+        image: '/images/projects/sentiment_analysis.png',
+        tag: ['Machine Learning'],
+        gitUrl: '/',
+        previewUrl: '/'
+    },
+    {
+        id: 25,
+        title: 'Aplikasi untuk Rehabilitasi Pasien Pasca Stroke',
+        description: 'There are admin and customer roles, CRUD User, CRUD Item, CRUD Order, Postman Collection.',
+        image: '/images/projects/rehab_app.jpg',
+        tag: ['Mobile'],
+        stacks: ['Flutter', 'Firebase', 'BLoC'],
+        gitUrl: '/',
+        previewUrl: '/'
+    },
+    {
+        id: 26,
+        title: 'Klasifikasi Gerakan untuk Rehabilitasi Pasien Pasca Stroke dengan CNN, GRU, LSTM',
+        description: '',
+        image: '/images/projects/rehab_app.jpg',
+        tag: ['Machine Learning'],
+        stacks: ['CNN', 'LSTM', 'GRU', 'Tensorflow', 'Yolo', 'Machine Learning', 'Klasifikasi', 'Object Detection'],
+        gitUrl: '/',
+        previewUrl: '/'
+    }
 ]
 
 const ProjectsSections = () => {
@@ -189,13 +313,13 @@ const ProjectsSections = () => {
                 />
                 <ProjectTag 
                     onClick={handleTagChange} 
-                    name="Front-End" 
-                    isSelected={tag === "Front-End"}
+                    name="Machine Learning" 
+                    isSelected={tag === "Machine Learning"}
                 />
                 <ProjectTag 
                     onClick={handleTagChange} 
-                    name="Back-End" 
-                    isSelected={tag === "Back-End"}
+                    name="FE & BE" 
+                    isSelected={tag === "FE & BE"}
                 />
             </div>
             <ul ref={ref} className='grid md:grid-cols-3 gap-8 md:gap-12'>
@@ -215,7 +339,7 @@ const ProjectsSections = () => {
                                 imgUrl={project.image}
                                 gitUrl={project.gitUrl}
                                 previewUrl={project.previewUrl}
-                                showGitUrl={project.title !== "Seller Dashboard PaDi UMKM"}
+                                showGitUrl={project.title !== "Seller Dashboard PaDi UMKM" && project.title !== "Klasifikasi Gerakan untuk Rehabilitasi Pasien Pasca Stroke dengan CNN, GRU, LSTM" && project.title !== "Aplikasi untuk Rehabilitasi Pasien Pasca Stroke"}
                                 showPreviewUrl={false}
                             />
                         </div>

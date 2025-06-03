@@ -10,6 +10,11 @@ const SKILLS_DATA = [
         totalDuration: "2 Years Experience (11 Months Work Experience)"
     },
     {
+        title: "Machine Learning",
+        language:"Image Classification, System Recommender, Sentiment Analysis, Data Science, Regression, Time Series Forecasting, Clustering",
+        totalDuration: "7 Months Experience"
+    },
+    {
         title: "Front-End Web Development",
         language:"HTML, CSS, Javascript, Next JS",
         totalDuration: "5 Months Experience"
@@ -20,16 +25,19 @@ const SKILLS_DATA = [
         totalDuration: "4 Months Experience"
     },
     {
-        title: "Computer Vision and Machine Learning",
-        totalDuration: "3 Months Experience"
-    },
-    {
         title: "UI/UX",
         totalDuration: "5 Months Experience"
     }
 ]
 
 const EXPERIENCE_DATA = [
+    {
+        image: "/images/logo/laskar_ai.png",
+        title: "AI Engineer & Data Scientist Cohort",
+        institution: "Laskar AI by Lintasarta, Dicoding, NVIDIA",
+        date: "Feb - June 2025",
+        totalDuration: "4 months"
+    },
     {
         image: "/images/logo/telkom_university.png",
         title: "Software Engineering Lecturer Assistant",
@@ -107,10 +115,10 @@ const ORGANIZATIONS_DATA = [
 
 const HONOR_AWARDS_DATA = [
     {
-        image: "/images/logo/telkom_university.png",
-        title: "Graduated with honors (Cum Laude) from the Bachelor of Informatics program with a GPA of 3.73/4.00",
-        institution: "Telkom University",
-        monthYear: "Dec 2024"
+        image: "/images/logo/elevaite.WEBP",
+        title: "Top 10 in Microsoft ElevAIte Hackathon Hub Telkom University 2025",
+        institution: "Microsoft Indonesia",
+        monthYear: "May 2025"
     },
     {
         image: "/images/logo/itfest.png",
@@ -248,6 +256,7 @@ function renderSkills() {
 const AboutSection = () => {
     const [tab, setTab] = useState('experience')
     const [isPending, startTransition] = useTransition()
+    const [isLoading, setIsLoading] = useState(true);
 
     const handleTabChange = (id) => {
         startTransition(() => {
@@ -258,13 +267,18 @@ const AboutSection = () => {
     return (
         <section className='text-white'  id='about'>
             <div className='md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16'>
-                <Image src='/images/programmer.jpg' width={700} height={700}/>
+                <div>
+                  {isLoading && (
+                    <div className="absolute inset-0 z-10 flex items-center justify-center bg-opacity-60">
+                      <div className="w-8 h-8 border-4 border-t-transparent border-white rounded-full animate-spin" />
+                    </div>
+                  )}
+                  <Image src='/images/programmer.jpg' width={700} height={700} onLoadingComplete={() => setIsLoading(false)}/>
+                </div>
                 <div className='mt-4 md:mt-0 text-left flex flex-col h-full'>
                     <h2 className='text-4xl font-bold text-white mb-4'>About Me</h2>
                     <p className='text-base lg:text-lg [text-align:justify]'>
-                    I am a passionate Software Engineer with a strong academic background in computer science. Proficient in Kotlin, Flutter, and Javascript, I have experience developing various mobile and web applications. 
-                    
-                    I am actively seeking a challenging position where I can apply my skills and knowledge to make a positive impact. Highly motivated and results-oriented, I possess a strong work ethic. Additionally, I am a team player and always eager to learn. Thank you for visiting my portfolio website! 
+                    I am a fresh graduate in Informatics from Telkom University with a strong academic background and a deep passion for software engineering. Proficient in mobile development and machine learning, I have hands-on experience building various mobile, web, and machine learning based projects. Motivated, results-oriented, and eager to contribute in a challenging role where I can apply my skills to create meaningful impact.
                     </p>
                     <div className="flex flex-row flex-wrap justify-center lg:justify-start gap-4 mt-5">
                         <TabButton selectTab={() => handleTabChange('skills')} active={tab === 'skills'}>
