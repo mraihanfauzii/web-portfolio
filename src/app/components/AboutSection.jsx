@@ -36,7 +36,7 @@ const EXPERIENCE_DATA = [
         title: "AI Engineer & Data Scientist Cohort",
         institution: "Laskar AI by Lintasarta, Dicoding, NVIDIA",
         date: "Feb - June 2025",
-        totalDuration: "4 months"
+        totalDuration: "5 months"
     },
     {
         image: "/images/logo/telkom_university.png",
@@ -115,7 +115,7 @@ const ORGANIZATIONS_DATA = [
 
 const HONOR_AWARDS_DATA = [
     {
-        image: "/images/logo/elevaite.WEBP",
+        image: "/images/logo/elevaite.png",
         title: "Top 10 in Microsoft ElevAIte Hackathon Hub Telkom University 2025",
         institution: "Microsoft Indonesia",
         monthYear: "May 2025"

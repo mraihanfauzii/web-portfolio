@@ -158,10 +158,10 @@ const projectsData = [
     {
         id: 15,
         title: 'Flutter TMDB Clean Architecture',
-        description: '',
+        description: 'Aplikasi ini memiliki beberapa fitur diantaranya melihat film dan series tv terkini yang dipanggil dari TMDB API menggunakan Dio, melihat detailnya, melihat episode dari setiap series tv, menyimpan film dan tv series sebagai watchlist.',
         image: '/images/projects/tmdb.jpg',
         tag: ['Mobile'],
-        stacks: ['Flutter', 'BLoC', 'Firebase Analytics & Crashlytics', 'Modularisasi'],
+        stacks: ['Flutter', 'BLoC', 'Firebase Analytics & Crashlytics', 'Modularisasi', 'SQFLite', 'Dio', '95%+ Test Coverage', 'Continuous Integration dengan Github Action'],
         gitUrl: 'https://github.com/mraihanfauzii/TMDB-Flutter-Expert-Dicoding',
         previewUrl: '/'
     },
@@ -171,6 +171,7 @@ const projectsData = [
         description: 'Proyek ini dibuat dengan tujuan membuat sistem klasifikasi gambar untuk mendeteksi apakah suatu buah itu masih layak konsumsi atau sudah tidak layak yaitu sudah busuk..',
         image: '/images/projects/fruit_quality_classification.jpg',
         tag: ['Machine Learning'],
+        stacks: ['Computer Vision', 'Image Classification', 'MobileNetV2', 'CNN'],
         gitUrl: 'https://github.com/mraihanfauzii/Fruit-Quality-Classification',
         previewUrl: '/'
     },
@@ -180,16 +181,18 @@ const projectsData = [
         description: 'Prediksi time series pada proyek ini tidak dimaksudkan sebagai satu-satunya acuan, melainkan sebagai indikator tambahan dalam strategi investasi. Metode ini juga dapat diterapkan ulang untuk saham lain dengan cara melatih ulang model menggunakan data harga saham yang ingin diprediksi.',
         image: '/images/projects/nvda_time_series_forecasting.jpg',
         tag: ['Machine Learning'],
+        stacks: ['Time Series Forecasting', 'LSTM', 'GRU', 'CNN'],
         gitUrl: 'https://github.com/mraihanfauzii/Predictive-Analytics-Time-Series-Forecasting-NVDA-Stock',
         previewUrl: '/'
     },
     {
         id: 18,
-        title: 'Music Recommendation System using Content Based Filtering and Collaborative Filtering',
-        description: 'Proyek ini berhasil menghadirkan sistem rekomendasi musik hybrid: TF‑IDF Cosine mengisi celah cold‑start, sedangkan RecommenderNet menyajikan rekomendasi personal dengan RMSE rendah. Perbandingan kedua pendekatan menunjukkan trade-off: Content-based menghasilkan rekomendasi yang sangat tepat sasaran secara kesamaan konten, namun mungkin kurang surprise. Collaborative filtering mampu menghasilkan rekomendasi yang lebih beragam dan personal, tetapi performa model sangat bergantung pada data..',
-        image: '/images/projects/recommendation_system.jpg',
+        title: 'Membangun Sistem Machine Learning',
+        description: 'Proyek ini bertujuan untuk mempelajari dan membuat Data Preprocessing dan Re-training otomatis menggunakan github action, Monitoring dan Logging menggunakan prometheus dan grafana',
+        image: '/images/projects/msml.png',
         tag: ['Machine Learning'],
-        gitUrl: 'https://github.com/mraihanfauzii/Music-Recommendation-System',
+        stacks: ['Github Action', 'Prometheus', 'Grafana', 'Docker', 'Dagshub', 'Regression : House Price Prediction'],
+        gitUrl: '/',
         previewUrl: '/'
     },
     {
@@ -198,7 +201,7 @@ const projectsData = [
         description: 'Cakupan proyek ini meliputi analisis menyeluruh terhadap data historis karyawan PT Jaya Jaya Maju guna mengidentifikasi pola attrition dan faktor-faktor penyebabnya, pembuatan dashboard bisnis interaktif sebagai alat monitoring dan insight, pembangunan model machine learning sederhana untuk memprediksi attrition, serta rekomendasi tindakan strategis',
         image: '/images/projects/attrition_analysis.jpg',
         tag: ['Machine Learning'],
-        stacks: ['Metabase', 'Tensorflow'],
+        stacks: ['Random Forest', 'Metabase','Supabase', 'Tensorflow'],
         gitUrl: 'https://github.com/mraihanfauzii/hr-data-science-solutions',
         previewUrl: '/'
     },
@@ -208,51 +211,54 @@ const projectsData = [
         description: 'Cakupan proyek ini meliputi analisis menyeluruh terhadap data murid Jaya Jaya Institut guna mengidentifikasi pola dropout dan faktor-faktor penyebabnya, pembuatan dashboard bisnis sebagai alat monitoring dan insight, pembangunan model machine learning sederhana untuk memprediksi status(dropout/graduate/enrolled), serta rekomendasi tindakan strategis.',
         image: '/images/projects/dropout_analysis.jpg',
         tag: ['Machine Learning'],
-        stacks: ['Metabase', 'Streamlit', 'Tensorflow'],
+        stacks: ['Random Forest', 'Metabase','Supabase', 'Streamlit', 'Tensorflow'],
         gitUrl: 'https://github.com/mraihanfauzii/student-dropout-prediction',
         previewUrl: 'https://student-dropout-prediction-mraihanfauzii.streamlit.app/'
     },
     {
         id: 21,
-        title: 'Membangun Sistem Machine Learning',
-        description: 'There are admin and customer roles, CRUD User, CRUD Item, CRUD Order, Postman Collection.',
-        image: '/images/projects/msml.png',
+        title: 'Music Recommendation System using Content Based Filtering and Collaborative Filtering',
+        description: 'Proyek ini berhasil menghadirkan sistem rekomendasi musik hybrid: TF‑IDF Cosine mengisi celah cold‑start, sedangkan RecommenderNet menyajikan rekomendasi personal dengan RMSE rendah. Perbandingan kedua pendekatan menunjukkan trade-off: Content-based menghasilkan rekomendasi yang sangat tepat sasaran secara kesamaan konten, namun mungkin kurang surprise. Collaborative filtering mampu menghasilkan rekomendasi yang lebih beragam dan personal, tetapi performa model sangat bergantung pada data..',
+        image: '/images/projects/recommendation_system.jpg',
         tag: ['Machine Learning'],
-        stacks: ['Github Action', 'Prometheus', 'Grafana', 'Regression : House Price Prediction'],
-        gitUrl: '/',
+        stacks: ['Recommendation System', 'Content Filtering(TF-IDF Cosine)', 'Collaborative Filtering(Recommender Net)'],
+        gitUrl: 'https://github.com/mraihanfauzii/Music-Recommendation-System',
         previewUrl: '/'
     },
     {
         id: 22,
-        title: 'Clustering and Classification on Bank Transaction Dataset',
-        description: '',
-        image: '/images/projects/clustering.png',
-        tag: ['Machine Learning'],
-        gitUrl: '/',
-        previewUrl: '/'
-    },
-    {
-        id: 23,
         title: 'Brazilian E-Commerce Analysis',
-        description: '',
+        description: 'Proyek ini bertujuan untuk menganalisis performa E-Commerce Brazil bernama Olist dengan menganalisa beberapa fitur penting kemudian dibuat juga RFM Analysis untuk menentukan beberapa tipe customer',
         image: '/images/projects/olist.png',
         tag: ['Machine Learning'],
+        stacks: ['Step : Data Wrangling, EDA, Visualization, RFM Analysis'],
         gitUrl: 'https://github.com/mraihanfauzii/Brazilian_E-Commerce_Public_Dataset_Analysis',
         previewUrl: 'https://mraihanfauzii-brazilian-e-commerce-pu-dashboarddashboard-0lkl5b.streamlit.app/'
     },
     {
-        id: 24,
+        id: 23,
         title: 'Sentiment Analysis Gopay App',
-        description: '',
+        description: 'Proyek ini bertujuan untuk menganalisis sentiment publik tentang aplikasi gopay yang didapat dari hasil scraping review aplikasi di playstore.',
         image: '/images/projects/sentiment_analysis.png',
         tag: ['Machine Learning'],
-        gitUrl: '/',
+        stacks: ['Scraping', 'Sentiment Analysis', 'SVM + TF-IDF', 'LSTM', 'CNN', 'GRU', 'RF + TF-IDF'],
+        gitUrl: 'https://github.com/mraihanfauzii/Sentiment-Analysis-GopayApp',
+        previewUrl: '/'
+    },
+    {
+        id: 24,
+        title: 'Clustering and Classification on Bank Transaction Dataset',
+        description: 'Proyek ini bertujuan untuk mengelompokan karakteristik nasabah bank menggunakan clustering dan kemudian dibuat model klasifikasi untuk memprediksi data baru untuk menentukan cluster nasabah. Proyek ini membandingkan beberapa model untuk menentukan model terbaik',
+        image: '/images/projects/clustering.png',
+        tag: ['Machine Learning'],
+        stacks: ['Clustering', 'Classification', 'K-Means', 'DBScan', 'Agglomerative Clustering', 'Logistic Regression', 'Random Forest'],
+        gitUrl: 'https://github.com/mraihanfauzii/Clustering-and-Classification-on-Bank-Transaction-Dataset',
         previewUrl: '/'
     },
     {
         id: 25,
         title: 'Aplikasi untuk Rehabilitasi Pasien Pasca Stroke',
-        description: 'There are admin and customer roles, CRUD User, CRUD Item, CRUD Order, Postman Collection.',
+        description: 'Proyek ini bertujuan untuk memudahkan pasien pasca stroke untuk dapat melakukan rehabilitasi dimana saja dengan bantuan teknologi yaitu dengan menggunakan machine learning dan mobile apps.',
         image: '/images/projects/rehab_app.jpg',
         tag: ['Mobile'],
         stacks: ['Flutter', 'Firebase', 'BLoC'],
@@ -262,10 +268,10 @@ const projectsData = [
     {
         id: 26,
         title: 'Klasifikasi Gerakan untuk Rehabilitasi Pasien Pasca Stroke dengan CNN, GRU, LSTM',
-        description: '',
+        description: 'Proyek ini bertujuan untuk memudahkan pasien pasca stroke untuk dapat melakukan rehabilitasi dimana saja dengan bantuan teknologi yaitu dengan menggunakan machine learning dan mobile apps.',
         image: '/images/projects/rehab_app.jpg',
         tag: ['Machine Learning'],
-        stacks: ['CNN', 'LSTM', 'GRU', 'Tensorflow', 'Yolo', 'Machine Learning', 'Klasifikasi', 'Object Detection'],
+        stacks: ['Klasifikasi', 'Object Detection', 'CNN', 'LSTM', 'GRU', 'Tensorflow', 'Yolo', 'Computer Vision'],
         gitUrl: '/',
         previewUrl: '/'
     }

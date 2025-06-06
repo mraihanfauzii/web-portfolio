@@ -622,7 +622,7 @@ const CertificatesSections = () => {
                         className="max-h-80 object-contain"
                         />
                     </div>
-                    <p className="text-gray-200 mb-4">{selectedCertificate.description}</p>
+                    <p className="text-gray-200 mb-4 [text-align:justify]">{selectedCertificate.description}</p>
 
                     {selectedCertificate.myRole && (
                     <div className="mb-4">
