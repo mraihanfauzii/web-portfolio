@@ -274,7 +274,77 @@ const projectsData = [
         stacks: ['Klasifikasi', 'Object Detection', 'CNN', 'LSTM', 'GRU', 'Tensorflow', 'Yolo', 'Computer Vision'],
         gitUrl: '/',
         previewUrl: '/'
-    }
+    },
+    /**/
+    {
+        id: 27,
+        title: 'Fullstack Campus Portal',
+        description: 'Proyek ini dibuat untuk memenuhi kebutuhan sertifikasi BNSP Junior Web Developer dan saya berhasil lulus pada sertifikasi tersebut.',
+        image: '/images/projects/campus-portal.png',
+        tag: ['FE & BE'],
+        stacks: ['Front-End', 'Back-End'],
+        gitUrl: 'https://github.com/mraihanfauzii/campus-portal-fullstack',
+        previewUrl: '/'
+    },
+    {
+        id: 28,
+        title: 'Fullstack Ecommerce',
+        description: 'Multi-Vendor E-Commerce Marketplace adalah aplikasi web full-stack yang dibangun menggunakan Next.js (App Router), meniru fungsionalitas inti dari platform seperti Tokopedia atau Shopee. Proyek ini memungkinkan pengguna untuk mendaftar sebagai pembeli (Buyer) atau sebagai penjual (Seller) yang dapat membuka toko dan mengelola produk mereka sendiri.',
+        image: '/images/projects/fullstack-ecommerce.png',
+        tag: ['FE & BE'],
+        stacks: ['Front-End', 'Back-End', 'Nextjs', 'Tailwind CSS', 'Prisma', 'PostgreSQL', 'NextAuth'],
+        gitUrl: 'https://github.com/mraihanfauzii/fullstack-ecommerce-jda',
+        previewUrl: '/'
+    },
+    {
+        id: 29,
+        title: 'RAG Chatbot',
+        image: '/images/projects/rag_chatbot.jpg',
+        tag: ['Machine Learning'],
+        stacks: ['Chatbot', 'RAG'],
+        gitUrl: '/',
+        previewUrl: '/'
+    },
+    /* */
+    {
+        id: 30,
+        title: 'Front-End Story Web',
+        description: '',
+        image: '/images/projects/fullstack.WEBP',
+        tag: ['FE & BE'],
+        stacks: ['Front-End', 'Back-End', 'React', 'Back-End',],
+        gitUrl: '/',
+        previewUrl: '/'
+    },
+    {
+        id: 31,
+        title: 'Openshop Backend Django',
+        description: '',
+        image: '/images/projects/fullstack.WEBP',
+        tag: ['FE & BE'],
+        stacks: ['Back-End', 'Django'],
+        gitUrl: '/',
+        previewUrl: '/'
+    },
+    {
+        id: 32,
+        title: 'Fullstack Golang',
+        description: '',
+        image: '/images/projects/fullstack.WEBP',
+        tag: ['FE & BE'],
+        stacks: ['Front-End', 'Back-End', 'Golang',],
+        previewUrl: '/'
+    },
+    {
+        id: 33,
+        title: 'Fullstack Spring Boot',
+        description: '',
+        image: '/images/projects/fullstack.WEBP',
+        tag: ['FE & BE'],
+        stacks: ['Front-End', 'Back-End', 'Java', 'Spring Boot'],
+        gitUrl: '/',
+        previewUrl: '/'
+    },
 ]
 
 const ProjectsSections = () => {

@@ -12,17 +12,17 @@ const SKILLS_DATA = [
     {
         title: "Machine Learning",
         language:"Image Classification, System Recommender, Sentiment Analysis, Data Science, Regression, Time Series Forecasting, Clustering",
-        totalDuration: "7 Months Experience"
+        totalDuration: "1+ Years Experience"
     },
     {
         title: "Front-End Web Development",
         language:"HTML, CSS, Javascript, Next JS",
-        totalDuration: "5 Months Experience"
+        totalDuration: "1+ Years Experience"
     },
     {
         title: "Back-End Web Development",
         language:"Express JS, Nest JS, Laravel",
-        totalDuration: "4 Months Experience"
+        totalDuration: "1+ Years Experience"
     },
     {
         title: "UI/UX",
@@ -32,10 +32,24 @@ const SKILLS_DATA = [
 
 const EXPERIENCE_DATA = [
     {
+        image: "/images/logo/aws.png",
+        title: "Cloud Computing Cohort - AWS re/Start Batch 12",
+        institution: "Amazon Web Services x Orbit Future Academy",
+        date: "July - Oct 2025",
+        totalDuration: "4 months"
+    },
+    {
+        image: "/images/logo/elevaite.png",
+        title: "Azure AI Engineer Cohort",
+        institution: "Microsoft ElevAIte",
+        date: "May - Aug 2025",
+        totalDuration: "4 months"
+    },
+    {
         image: "/images/logo/laskar_ai.png",
         title: "AI Engineer & Data Scientist Cohort",
         institution: "Laskar AI by Lintasarta, Dicoding, NVIDIA",
-        date: "Feb - June 2025",
+        date: "Feb - July 2025",
         totalDuration: "5 months"
     },
     {
@@ -98,10 +112,10 @@ const ORGANIZATIONS_DATA = [
         totalDuration: "13 months"
     },
     {
-        image: "/images/logo/hima_if.png",
-        title: "Interfest Publication & Creative Staff",
-        institution: "Himpunan Mahasiswa S1 Informatika Telkom University",
-        date: "Sep - Des 2022",
+        image: "/images/logo/motion_lab.png",
+        title: "Research Member (Mobile Programmer)",
+        institution: "Mobile Innovation Laboratory",
+        date: "Nov 2022 - Feb 2023",
         totalDuration: "4 months"
     },
     {
@@ -110,15 +124,35 @@ const ORGANIZATIONS_DATA = [
         institution: "Himpunan Mahasiswa S1 Informatika Telkom University",
         date: "Apr 2022 - Mar 2023",
         totalDuration: "12 months"
-    }
+    },
+    {
+        image: "/images/logo/hima_if.png",
+        title: "Interfest Publication & Creative Staff",
+        institution: "Himpunan Mahasiswa S1 Informatika Telkom University",
+        date: "Sep - Des 2022",
+        totalDuration: "4 months"
+    },
+    {
+        image: "/images/logo/ase_lab.png",
+        title: "Research Member (Game Programmer)",
+        institution: "Advanced Software Engineering Laboratory",
+        date: "Apr - Okt 2022",
+        totalDuration: "7 months"
+    },
 ]
 
 const HONOR_AWARDS_DATA = [
     {
+        image: "/images/logo/pikiran-terbaik-negeri.png",
+        title: "Top 10 from 649 Products (Semifinalist) at Pikiran Terbaik Negeri Hackathon 2025",
+        institution: "Yayasan BUMN",
+        monthYear: "Aug 2025"
+    },
+    {
         image: "/images/logo/elevaite.png",
-        title: "Top 10 in Microsoft ElevAIte Hackathon Hub Telkom University 2025",
+        title: "1st Place in Microsoft ElevAIte Hackathon Hub Telkom University 2025",
         institution: "Microsoft Indonesia",
-        monthYear: "May 2025"
+        monthYear: "Jun 2025"
     },
     {
         image: "/images/logo/itfest.png",

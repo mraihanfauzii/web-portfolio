@@ -55,19 +55,19 @@ const certificatesData = [
     },
     {
         id: 4,
-        title: 'Author and Presenter at the 7th International Conference on Data Science and Its Applications (ICoDSA) 2024',
-        dateOrPublisher: 'The 7th International Conference on Data Science and Its Applications (ICoDSA)',
-        image: '/images/certificates/ICoDSA2024_Author-Certificate.jpg',
-        type: ['Conference', 'Paper', 'IEEE', 'Scopus Index', 'English', 'Computer Vision', 'CNN', 'Resnet-50', 'Inception V3'],
-        description: "The International Conference on Data Science and Its Applications (ICoDSA) is an annual conference that gathers researchers, academics, and professionals from around the world to present their findings and advancements in the field of data science. All papers presented at ICoDSA are indexed by Scopus, ensuring wide visibility and academic recognition. \n I participated in the 7th ICoDSA as an author and presenter of the paper titled 'Food Type Detection Using the Convolutional Neural Network Method for Calorie Counter Applications.' After the conference, the paper was published in IEEE Xplore, further broadening its reach and impact within the scientific community.",
-        previewUrl: 'https://drive.google.com/drive/folders/1ng2HMfq4BpFIu2VOnyhMIGTAg-tc7Idl?usp=sharing'
+        title: '1st Place in Microsoft ElevAIte Hackathon 2025 Hub Telkom University',
+        dateOrPublisher: 'Microsoft Indonesia',
+        image: '/images/certificates/1st-winner-microsoft-elevaIte-hub-tel-u.jpg',
+        type: ['Competition', 'Hackathon','Professional Level', 'AI', 'Mobile Application', 'Pitching', 'National'],
+        description: "Developed an innovative machine learning-driven rehabilitation mobile app, selected among national level competitors including students and professionals.",
+        previewUrl: 'https://drive.google.com/file/d/1s9LLqo46v4oXeUjm9GwFF08Fc1VlFqWT/view?usp=sharing'
     },
     {
         id: 5,
         title: '3rd Place in Hackathon ITFest 2024',
         dateOrPublisher: 'Himavo Micro IT & GDSC IPB University',
         image: '/images/certificates/3rd_Place_in_ITFest_Hackathon.png',
-        type: ['Competition', 'Hackathon', 'Mobile Application', 'Pitching', 'National'],
+        type: ['Competition', 'Hackathon','College Level', 'Mobile Application', 'Pitching', 'National'],
         description: "Ranked 3rd at the ITFest 2024 Hackathon after advancing through a series of challenging elimination phases, competing against teams from several universities. Our project, DevLabs, offered an innovative approach to connect clients with architects and builders, streamlining the collaboration process through a unified platform.We developed two mobile applications: one for customers and another for vendors (architects and builders), along with a backend system that we deployed. The platform also featured a machine learning-based recommender system, which was integrated into the backend to match clients with suitable architects based on their project needs.",
         previewUrl: 'https://drive.google.com/file/d/1nre6lPJcGbCOBU8z86MiL92NJ1DPDHxH/view?usp=sharing'
     },
@@ -76,12 +76,62 @@ const certificatesData = [
         title: '3rd Place in JBC Business Plan Competition 2022',
         dateOrPublisher: 'Search Telkom University',
         image: '/images/certificates/3rd_Place_in_JBC-Business-Plan-Competition-2022.jpg',
-        type: ['Competition', 'Business Plan Competition', 'Mobile Application', 'Business Proposal', 'Pitching', 'National'],
+        type: ['Competition', 'Business Plan Competition','College Level', 'Mobile Application', 'Business Proposal', 'Pitching', 'National'],
         description: "Ranked 3rd at the JBC Business Plan Competition 2022, advancing through multiple elimination rounds while competing against teams from various universities. Our project, DevLabs, offered an innovative approach to connect clients with architects and builders, streamlining the collaboration process through a unified platform.Alongside delivering our pitch to the judges, we submitted a 55-page business proposal, meticulously outlining key components such as the business concept, operational workflow, marketing tactics, human resource management, and financial strategy. This comprehensive plan provided a clear pathway for implementation and scaling, reinforcing the feasibility of our innovation.",
         previewUrl: 'https://drive.google.com/file/d/1s0AT9OfoJkr-A0A3s3Bb_lOIJ8AW84Dj/view?usp=sharing'
     },
     {
         id: 7,
+        title: 'Author and Presenter at the 7th International Conference on Data Science and Its Applications (ICoDSA) 2024',
+        dateOrPublisher: 'The 7th International Conference on Data Science and Its Applications (ICoDSA)',
+        image: '/images/certificates/ICoDSA2024_Author-Certificate.jpg',
+        type: ['Conference', 'Paper', 'IEEE', 'Scopus Index', 'English', 'Computer Vision', 'CNN', 'Resnet-50', 'Inception V3'],
+        description: "The International Conference on Data Science and Its Applications (ICoDSA) is an annual conference that gathers researchers, academics, and professionals from around the world to present their findings and advancements in the field of data science. All papers presented at ICoDSA are indexed by Scopus, ensuring wide visibility and academic recognition. \n I participated in the 7th ICoDSA as an author and presenter of the paper titled 'Food Type Detection Using the Convolutional Neural Network Method for Calorie Counter Applications.' After the conference, the paper was published in IEEE Xplore, further broadening its reach and impact within the scientific community.",
+        previewUrl: 'https://drive.google.com/drive/folders/1ng2HMfq4BpFIu2VOnyhMIGTAg-tc7Idl?usp=sharing'
+    },
+    {
+        id: 8,
+        title: 'Alibaba Cloud Certified Associate : Cloud Engineer',
+        dateOrPublisher: 'Alibaba Cloud',
+        image: '/images/certificates/aca-cloud-engineer.png',
+        type: ['International Certification', 'Cloud Computing', 'Alibaba Cloud'],
+        previewUrl: 'https://drive.google.com/file/d/1tEcJTn0K6pPl_5GZqEYSld3IJ6y2MsXg/view?usp=sharing'
+    },
+    {
+        id: 9,
+        title: 'Microsoft Certified: Azure AI Fundamentals',
+        dateOrPublisher: 'Microsoft',
+        image: '/images/certificates/ai-900.png',
+        type: ['Deep Learning', 'Machine Learning', 'Computer Vision', 'NLP'],
+        previewUrl: 'https://learn.microsoft.com/api/credentials/share/en-us/MuhammadRaihanFauzi-3473/DBB1B3233003CC18?sharingId=AD20487FB2CD5A7D'
+    },
+    {
+        id: 10,
+        title: 'AI Engineer & Data Scientist Learning Path',
+        dateOrPublisher: 'Laskar AI by Lintasarta, Dicoding, Nvidia',
+        image: '/images/certificates/laskar-ai.png',
+        type: ['AI', 'Machine Learning', 'Deep Learning', 'Data Science', 'Data Analysis'],
+        description: "Selected as one of 657 participants in the Laskar AI program out of a total of 13,500+ applicants to study Artificial Intelligence and Data Science. Laskar AI is a scholarship initiative by Lintasarta, in collaboration with Dicoding and NVIDIA. This program aims to cultivate digital talents capable of adopting and developing AI technology, contributing to Indonesia Emas 2045, an initiative envisioning Indonesia as an advanced and prosperous nation by 2045. It combines intensive training in Machine Learning & Data Science as the foundation for AI development. As a total solution company in the field of Information Communication and Technology (ICT), Lintasarta has been contributing to the advancement of technology literacy and skills among Indonesia’s younger generation for more than 36 years since its establishment in 1988.",
+        previewUrl: 'https://drive.google.com/file/d/1k-qZx6r54DHeiY2uJrHAuTBeU7b36Tk7/view?usp=sharing'
+    },
+    {
+        id: 11,
+        title: 'Junior Web Programmer',
+        dateOrPublisher: 'Badan Nasional Sertifikasi Profesi (BNSP)',
+        image: '/images/certificates/junior-web-bnsp.jpg',
+        type: ['Front-End', 'Back-End'],
+        previewUrl: 'https://drive.google.com/file/d/1wBzYGwON4m8FxUPPcr54n1NrdFvm76eA/view?usp=sharing'
+    },
+    {
+        id: 12,
+        title: 'Google AI Essentials',
+        dateOrPublisher: 'Google',
+        image: '/images/certificates/google-ai-essentials.jpg',
+        type: ['AI Essentials'],
+        previewUrl: 'https://www.coursera.org/account/accomplishments/specialization/83DYTILBGUBP'
+    },
+    {
+        id: 13,
         title: 'Machine Learning Terapan',
         dateOrPublisher: 'Dicoding Indonesia',
         image: '/images/certificates/ml_terapan.png',
@@ -97,7 +147,7 @@ const certificatesData = [
         previewUrl: 'https://www.dicoding.com/certificates/07Z6391OWZQR'
     },
     {
-        id: 8,
+        id: 14,
         title: 'Menjadi Flutter Developer Expert',
         dateOrPublisher: 'Dicoding Indonesia',
         image: '/images/certificates/flutter_expert.png',
@@ -116,7 +166,7 @@ const certificatesData = [
         previewUrl: 'https://www.dicoding.com/certificates/N9ZO99JG6XG5'
     },
     {
-        id: 9,
+        id: 15,
         title: 'Belajar Penerapan Data Science',
         dateOrPublisher: 'Dicoding Indonesia',
         image: '/images/certificates/penerapan_data_science.png',
@@ -133,7 +183,7 @@ const certificatesData = [
         previewUrl: 'https://www.dicoding.com/certificates/1RXYEGNMKZVM'
     },
     {
-        id: 10,
+        id: 16,
         title: 'Flutter & Dart - The Complete Guide [2024 Edition]',
         dateOrPublisher: 'Academind',
         image: '/images/certificates/flutter_udemy.jpg',
@@ -141,7 +191,7 @@ const certificatesData = [
         previewUrl: 'https://www.udemy.com/certificate/UC-2b68d8c3-db2d-4644-852a-9d8d798a3cdc/'
     },
     {
-        id: 11,
+        id: 17,
         title: 'Complete React Native in 2023: Zero to Mastery (with Hooks)',
         dateOrPublisher: 'Zero To Mastery Academy',
         image: '/images/certificates/react_native_udemy.jpg',
@@ -149,7 +199,7 @@ const certificatesData = [
         previewUrl: 'https://www.udemy.com/certificate/UC-2f84bb69-81f8-4cd9-b01c-656fd99bd4a5/'
     },
     {
-        id: 12,
+        id: 18,
         title: 'Intensive Bootcamp Laravel Web Development',
         dateOrPublisher: 'SanberCode',
         image: '/images/certificates/laravel.png',
@@ -165,7 +215,7 @@ const certificatesData = [
         previewUrl: 'https://sanbercode.com/certificate/in/12a96afb-eb52-4145-b23e-0dee8e8dc5cf'
     },
     {
-        id: 13,
+        id: 19,
         title: 'Membangun Sistem Machine Learning',
         dateOrPublisher: 'Dicoding Indonesia',
         image: '/images/certificates/sistem_machine_learning.png',
@@ -180,7 +230,7 @@ const certificatesData = [
         previewUrl: 'https://www.dicoding.com/certificates/6RPNRL839X2M'
     },
     {
-        id: 14,
+        id: 20,
         title: 'Belajar Pengembangan Machine Learning',
         dateOrPublisher: 'Dicoding Indonesia',
         image: '/images/certificates/pengembangan_ml.png',
@@ -199,7 +249,7 @@ const certificatesData = [
         previewUrl: 'https://www.dicoding.com/certificates/N9ZO9RQVYXG5'
     },
         {
-        id: 15,
+        id: 21,
         title: 'Belajar Machine Learning untuk Pemula',
         dateOrPublisher: 'Dicoding Indonesia',
         image: '/images/certificates/ml_pemula.png',
@@ -216,7 +266,7 @@ const certificatesData = [
         previewUrl: 'https://www.dicoding.com/certificates/MEPJNQQMLX3V'
     },
     {
-        id: 16,
+        id: 22,
         title: 'Mahir SCRUM untuk Pengembangan Produk Digital',
         dateOrPublisher: 'Pijar Mahir',
         image: '/images/certificates/Sertifikat_Penyelesaian_Mahir_SCRUM_Pijar_Mahir.jpg',
@@ -224,7 +274,7 @@ const certificatesData = [
         previewUrl: 'https://pijarmahir.id/sertifikat/KbtadW6bcF'
     },
     {
-        id: 17,
+        id: 23,
         title: 'Belajar Prinsip Pemrograman SOLID',
         dateOrPublisher: 'Dicoding Indonesia',
         image: '/images/certificates/solid.png',
@@ -238,7 +288,7 @@ const certificatesData = [
         previewUrl: 'https://www.dicoding.com/certificates/L4PQG358VZO1'
     },
     {
-        id: 18,
+        id: 24,
         title: 'Belajar Pengembangan Aplikasi Flutter Intermediate',
         dateOrPublisher: 'Dicoding Indonesia',
         image: '/images/certificates/flutter_intermediate.png',
@@ -256,7 +306,7 @@ const certificatesData = [
         previewUrl: 'https://www.dicoding.com/certificates/2VX348MLNZYQ'
     },
     {
-        id: 19,
+        id: 25,
         title: 'Belajar Fundamental Aplikasi Flutter',
         dateOrPublisher: 'Dicoding Indonesia',
         image: '/images/certificates/fundamental_flutter.png',
@@ -274,7 +324,7 @@ const certificatesData = [
         previewUrl: 'https://www.dicoding.com/certificates/07Z643QNWPQR'
     },
     {
-        id: 20,
+        id: 26,
         title: 'Belajar Membuat Aplikasi Android dengan Jetpack Compose',
         dateOrPublisher: 'Dicoding Indonesia',
         image: '/images/certificates/jetpack_compose.png',
@@ -291,7 +341,7 @@ const certificatesData = [
         previewUrl: 'https://www.dicoding.com/certificates/81P23835YXOY'
     },
     {
-        id: 21,
+        id: 27,
         title: 'Belajar Pengembangan Aplikasi Android Intermediate',
         dateOrPublisher: 'Dicoding Indonesia',
         image: '/images/certificates/android_intermediate.png',
@@ -310,7 +360,7 @@ const certificatesData = [
         previewUrl: 'https://www.dicoding.com/certificates/QLZ9Q462DZ5D'
     },
     {
-        id: 22,
+        id: 28,
         title: 'Belajar Fundamental Aplikasi Android',
         dateOrPublisher: 'Dicoding Indonesia',
         image: '/images/certificates/fundamental_android.png',
@@ -329,7 +379,7 @@ const certificatesData = [
         previewUrl: 'https://www.dicoding.com/certificates/0LZ09D690Z65'
     },
     {
-        id: 23,
+        id: 29,
         title: 'Belajar Dasar Pemrograman Web',
         dateOrPublisher: 'Dicoding Indonesia',
         image: '/images/certificates/dasar_pemrograman_web.png',
@@ -341,7 +391,7 @@ const certificatesData = [
         previewUrl: 'https://www.dicoding.com/certificates/N9ZO6E4V0XG5'
     },
     {
-        id: 24,
+        id: 30,
         title: 'Belajar Dasar-Dasar DevOps',
         dateOrPublisher: 'Dicoding Indonesia',
         image: '/images/certificates/dasar-dasar_devops.png',
@@ -355,7 +405,7 @@ const certificatesData = [
         previewUrl: 'https://www.dicoding.com/certificates/4EXGQONR1ZRL'
     },
     {
-        id: 25,
+        id: 31,
         title: 'Belajar Membuat Aplikasi Back-End untuk Pemula dengan Javascript',
         dateOrPublisher: 'Dicoding Indonesia',
         image: '/images/certificates/be_pemula.png',
@@ -370,7 +420,7 @@ const certificatesData = [
         previewUrl: 'https://www.dicoding.com/certificates/JMZV3LN5JPN9'
     },
     {
-        id: 26,
+        id: 32,
         title: 'Belajar Dasar AI',
         dateOrPublisher: 'Dicoding Indonesia',
         image: '/images/certificates/dasar_ai.png',
@@ -384,7 +434,7 @@ const certificatesData = [
         previewUrl: 'https://www.dicoding.com/certificates/NVP77RO3GPR0'
     },
     {
-        id: 27,
+        id: 33,
         title: 'Belajar Dasar UX Design',
         dateOrPublisher: 'Dicoding Indonesia',
         image: '/images/certificates/ux_design.png',
@@ -399,7 +449,7 @@ const certificatesData = [
         previewUrl: 'https://www.dicoding.com/certificates/0LZ096RGKZ65'
     },
     {
-        id: 28,
+        id: 34,
         title: 'Belajar Membuat Aplikasi Android untuk Pemula',
         dateOrPublisher: 'Dicoding Indonesia',
         image: '/images/certificates/android_pemula.png',
@@ -415,7 +465,7 @@ const certificatesData = [
         previewUrl: 'https://www.dicoding.com/certificates/MEPJK1YW6X3V'
     },
     {
-        id: 29,
+        id: 35,
         title: 'Belajar Membuat Aplikasi Flutter untuk Pemula',
         dateOrPublisher: 'Dicoding Indonesia',
         image: '/images/certificates/flutter_pemula.png',
@@ -428,7 +478,7 @@ const certificatesData = [
         previewUrl: 'https://www.dicoding.com/certificates/0LZ093210Z65'
     },
     {
-        id: 30,
+        id: 36,
         title: 'Belajar Dasar Git dengan GitHub',
         dateOrPublisher: 'Dicoding Indonesia',
         image: '/images/certificates/github.png',
@@ -443,7 +493,7 @@ const certificatesData = [
         previewUrl: 'https://www.dicoding.com/certificates/0LZ0GNNRQX65'
     },
     {
-        id: 31,
+        id: 37,
         title: 'IT Support Google Specialization',
         dateOrPublisher: 'Google',
         image: '/images/certificates/IT_Support_Google-Coursera.jpeg',
@@ -458,7 +508,7 @@ const certificatesData = [
         previewUrl: 'https://coursera.org/verify/professional-cert/AB547QLL7XBW'
     },
     {
-        id: 32,
+        id: 38,
         title: 'UI/UX Bootcamp',
         dateOrPublisher: 'MySkill',
         image: '/images/certificates/myskill-uiux.png',
@@ -476,7 +526,7 @@ const certificatesData = [
         previewUrl: 'https://drive.google.com/file/d/18Ep50MBSB9XtGs-naNH2vLNM0VKrfew-/view?usp=sharing'
     },
     {
-        id: 33,
+        id: 39,
         title: 'Digital Marketing Bootcamp',
         dateOrPublisher: 'MySkill',
         image: '/images/certificates/myskill-digmar.png',
