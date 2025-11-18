@@ -312,36 +312,7 @@ const projectsData = [
         description: '',
         image: '/images/projects/fullstack.WEBP',
         tag: ['FE & BE'],
-        stacks: ['Front-End', 'Back-End', 'React', 'Back-End',],
-        gitUrl: '/',
-        previewUrl: '/'
-    },
-    {
-        id: 31,
-        title: 'Openshop Backend Django',
-        description: '',
-        image: '/images/projects/fullstack.WEBP',
-        tag: ['FE & BE'],
-        stacks: ['Back-End', 'Django'],
-        gitUrl: '/',
-        previewUrl: '/'
-    },
-    {
-        id: 32,
-        title: 'Fullstack Golang',
-        description: '',
-        image: '/images/projects/fullstack.WEBP',
-        tag: ['FE & BE'],
-        stacks: ['Front-End', 'Back-End', 'Golang',],
-        previewUrl: '/'
-    },
-    {
-        id: 33,
-        title: 'Fullstack Spring Boot',
-        description: '',
-        image: '/images/projects/fullstack.WEBP',
-        tag: ['FE & BE'],
-        stacks: ['Front-End', 'Back-End', 'Java', 'Spring Boot'],
+        stacks: ['Front-End', 'React',],
         gitUrl: '/',
         previewUrl: '/'
     },
