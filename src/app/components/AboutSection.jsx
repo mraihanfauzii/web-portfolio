@@ -32,6 +32,13 @@ const SKILLS_DATA = [
 
 const EXPERIENCE_DATA = [
     {
+        image: "/images/logo/astra.png",
+        title: "Android Developer",
+        institution: "Astra Interational",
+        date: "From Feb 2026",
+        totalDuration: " Until Now"
+    },
+    {
         image: "/images/logo/aws.png",
         title: "Cloud Computing Cohort - AWS re/Start Batch 12",
         institution: "Amazon Web Services x Orbit Future Academy",
@@ -58,13 +65,6 @@ const EXPERIENCE_DATA = [
         institution: "Telkom University",
         date: "Oct 2024 - Jan 2025",
         totalDuration: "4 months"
-    },
-    {
-        image: "/images/logo/digistar_club.png",
-        title: "Back-End Mentee of Digistar Class",
-        institution: "Digistar Club by Telkom Indonesia",
-        date: "Aug - Sep 2024",
-        totalDuration: "2 months"
     },
     {
         image: "/images/logo/telkom_indonesia.png",
